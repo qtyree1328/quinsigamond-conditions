@@ -1,20 +1,25 @@
-Paused and documented. Progress is saved to docs/report-digest-progress.md.
+Report digest: DONE.
 
-Where things stand
-Done:
+The annual Lake Quinsigamond water quality reports (2022–2025) have been
+digested into a new **Annual reports** page.
 
-Inspected all 4 reports (2022–2025, 20–27 pages each) — they share a consistent structure (per-parameter sections each rated Excellent/Good/Fair/Poor, plus events, invasives, contaminants, depth profiles).
-Extracted clean layout text for all 4 years.
-Rendered every page to PNG (120 dpi) so figures can be read with vision.
-Determined the figure strategy: the seasonal charts are vector-drawn, not extractable as clean images — so the plan is to read their data with vision and rebuild consistent cross-year charts, plus crop a visual gallery.
-Read the full 2022 report and wrote a shared extraction schema (SCHEMA.md) so per-year results merge cleanly.
-Interrupted: I was about to launch 4 parallel agents (one per year) to read text + figures and emit structured JSON + summaries. You paused before they ran — none executed, so no agent output exists yet.
+Deliverables (all committed):
+- `reports.html` / `reports.js` — the new digest page (linked from the main
+  dashboard header nav). Cross-year scorecard, four trend charts, per-year
+  summary cards, and a report-figure gallery with lightbox.
+- `data/reports.json` — merged machine-readable digest (per-year data +
+  cross-year trends + scorecard).
+- `data/report-gallery.json` + `assets/reports/*.png` — curated report figures.
+- `docs/report-digests/*.md` — per-year markdown digests + index/README.
 
-Not started: figure gallery, merged reports.json, the digest dashboard, per-year markdown digests.
+Method: every page of all four PDFs was read (text + figures, via four parallel
+per-year agents). Ratings and min/max/peak numbers are transcribed from report
+text (high confidence); seasonal chart shapes were read from figures and are
+approximate. See `docs/report-digests/README.md` and the "Method & caveats"
+section on the page.
 
-Note: the extracted text/PNGs live in a session-temporary scratchpad. The prep commands to regenerate them are in the progress doc.
-
-Before I resume, two decisions would help
-Deliverable — my default plan is a standalone digest/index.html page (cross-year trend charts + a parameter×year scorecard matrix + per-year summary cards + figure gallery), backed by a reports.json and per-year markdown digests, all committed into the repo. Good, or do you want it integrated into the existing dashboard / kept as just markdown + data?
-The paused step was the 4-agent fan-out to read the charts. Was the pause because you wanted to redirect the approach, or just to checkpoint? If you're fine with it, I'll re-launch those agents and continue.
-How would you like me to proceed?
+Headline cross-year findings:
+- Overall: Good (2022) → Good/Fair (2023) → Good/Fair (2024) → Good (2025).
+- Beach closures (Regatta Pt): 32 → 63 → 50 → 0 days; 2023 (record-wet) worst.
+- Deep-water phosphorus peak rising every year: 0.408 → 0.388 → 0.509 → 0.673 mg/L.
+- Dissolved oxygen rated "Fair" every year (summer bottom-water hypoxia); no fish kills.

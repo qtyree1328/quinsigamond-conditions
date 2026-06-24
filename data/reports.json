@@ -1,0 +1,2414 @@
+{
+  "meta": {
+    "title": "Lake Quinsigamond Annual Water Quality Reports \u2014 2022\u20132025 Digest",
+    "source": "City of Worcester, Department of Sustainability & Resilience, Lakes & Ponds Program",
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "generated": "2026-06-24",
+    "note": "Structured digest of the City of Worcester annual Lake Quinsigamond Water Quality Reports. Ratings and numeric min/max/peak values are transcribed from report text (high confidence). Seasonal chart shapes were read from report figures with vision and are approximate."
+  },
+  "trends": {
+    "overallState": [
+      {
+        "year": 2022,
+        "value": "Good"
+      },
+      {
+        "year": 2023,
+        "value": "Good/Fair"
+      },
+      {
+        "year": 2024,
+        "value": "Good/Fair"
+      },
+      {
+        "year": 2025,
+        "value": "Good"
+      }
+    ],
+    "beachClosureDays": {
+      "regattaPoint": [
+        {
+          "year": 2022,
+          "value": 32
+        },
+        {
+          "year": 2023,
+          "value": 63
+        },
+        {
+          "year": 2024,
+          "value": 50
+        },
+        {
+          "year": 2025,
+          "value": 0
+        }
+      ],
+      "lakePark": [
+        {
+          "year": 2022,
+          "value": 0
+        },
+        {
+          "year": 2023,
+          "value": 25
+        },
+        {
+          "year": 2024,
+          "value": 24
+        },
+        {
+          "year": 2025,
+          "value": 7
+        }
+      ]
+    },
+    "southBottomTpPeak": [
+      {
+        "year": 2022,
+        "value": 0.408
+      },
+      {
+        "year": 2023,
+        "value": 0.388
+      },
+      {
+        "year": 2024,
+        "value": 0.509
+      },
+      {
+        "year": 2025,
+        "value": 0.673
+      }
+    ],
+    "maxSurfaceTempC": [
+      {
+        "year": 2022,
+        "value": 28.3
+      },
+      {
+        "year": 2023,
+        "value": 27.0
+      },
+      {
+        "year": 2024,
+        "value": 28.4
+      },
+      {
+        "year": 2025,
+        "value": 28.5
+      }
+    ],
+    "secchiRangeFt": [
+      {
+        "year": 2022,
+        "min": 6.75,
+        "max": 17.0
+      },
+      {
+        "year": 2023,
+        "min": 4.75,
+        "max": 13.25
+      },
+      {
+        "year": 2024,
+        "min": 6.75,
+        "max": 13.25
+      },
+      {
+        "year": 2025,
+        "min": 7.25,
+        "max": 14.75
+      }
+    ],
+    "squeezeDays": [
+      {
+        "year": 2022,
+        "value": 2
+      },
+      {
+        "year": 2023,
+        "value": 3
+      },
+      {
+        "year": 2024,
+        "value": null
+      },
+      {
+        "year": 2025,
+        "value": 2
+      }
+    ]
+  },
+  "scorecard": [
+    {
+      "key": "overall",
+      "label": "Overall State",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Good"
+        },
+        {
+          "year": 2023,
+          "rating": "Good/Fair"
+        },
+        {
+          "year": 2024,
+          "rating": "Good/Fair"
+        },
+        {
+          "year": 2025,
+          "rating": "Good"
+        }
+      ]
+    },
+    {
+      "key": "fecalBacteria",
+      "label": "Fecal Bacteria",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Good"
+        },
+        {
+          "year": 2023,
+          "rating": "Fair"
+        },
+        {
+          "year": 2024,
+          "rating": "Fair"
+        },
+        {
+          "year": 2025,
+          "rating": "Good"
+        }
+      ]
+    },
+    {
+      "key": "waterClarity",
+      "label": "Water Clarity",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Good"
+        },
+        {
+          "year": 2023,
+          "rating": "Fair"
+        },
+        {
+          "year": 2024,
+          "rating": "Good"
+        },
+        {
+          "year": 2025,
+          "rating": "Good"
+        }
+      ]
+    },
+    {
+      "key": "temperature",
+      "label": "Temperature",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Good"
+        },
+        {
+          "year": 2023,
+          "rating": "Good"
+        },
+        {
+          "year": 2024,
+          "rating": "Good"
+        },
+        {
+          "year": 2025,
+          "rating": "Good"
+        }
+      ]
+    },
+    {
+      "key": "dissolvedOxygen",
+      "label": "Dissolved Oxygen",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Fair"
+        },
+        {
+          "year": 2023,
+          "rating": "Fair"
+        },
+        {
+          "year": 2024,
+          "rating": "Fair"
+        },
+        {
+          "year": 2025,
+          "rating": "Fair"
+        }
+      ]
+    },
+    {
+      "key": "cyanobacteria",
+      "label": "Cyanobacteria",
+      "values": [
+        {
+          "year": 2022,
+          "rating": "Good"
+        },
+        {
+          "year": 2023,
+          "rating": "Good"
+        },
+        {
+          "year": 2024,
+          "rating": "Good"
+        },
+        {
+          "year": 2025,
+          "rating": "Good"
+        }
+      ]
+    }
+  ],
+  "years": {
+    "2022": {
+      "year": 2022,
+      "overallState": "Good",
+      "summary": "In 2022, the City of Worcester's Lakes and Ponds Program rated the overall state of Lake Quinsigamond as \"Good,\" the same as 2021. Fecal bacteria challenges were localized to the shoreline: the Regatta Point beach was closed 32 days across four exceedance events (tested 21 times), while Lake Park had no closures (tested 15 times), and open-water E. coli stayed low. Water clarity decreased from 2021, with Secchi depths of 6.75 to 17 feet, mostly in the \"Fair\" range. Surface water reached a maximum of 28.3 C in early August, about 0.9 C warmer than 2021. The lake stratified by late June, and bottom dissolved oxygen fell below 4 mg/L (hypoxic) after June 29; on August 24 and September 13 no portion of the water column met both the 4 mg/L oxygen and 20 C temperature thresholds (\"the squeeze\"), though no fish kills occurred. Surface phosphorus stayed very low, but bottom phosphorus at the southern site rose sharply, peaking at 0.408 mg/L on October 26. No summer cyanobacteria blooms were observed, but residents reported fall scums earlier than usual. PFAS and other contaminants remained below health thresholds. Two notable disturbances occurred: a 5.75-million-gallon sewage overflow in February and repeated construction sediment runoff.",
+      "ratings": {
+        "fecalBacteria": "Good",
+        "waterClarity": "Good",
+        "temperature": "Good",
+        "dissolvedOxygen": "Fair",
+        "pH": null,
+        "nutrients": null,
+        "cyanobacteria": "Good",
+        "invasiveSpecies": null,
+        "tributaries": null,
+        "litter": null
+      },
+      "beaches": {
+        "regattaPoint": {
+          "daysClosed": 32,
+          "closureEvents": 4,
+          "timesTested": 21,
+          "notes": "Closed on four occasions for a total of 32 days due to fecal bacteria (Enterococcus) exceedances; fewer closures than 2021 and many past years, possibly due to fewer rain events washing goose droppings into the water."
+        },
+        "lakePark": {
+          "daysClosed": 0,
+          "closureEvents": 0,
+          "timesTested": 15,
+          "notes": "Tested 15 times for Enterococcus with no closures in 2022."
+        }
+      },
+      "metrics": {
+        "secchiClarityFt": {
+          "min": 6.75,
+          "max": 17.0,
+          "avg": null,
+          "unit": "ft",
+          "notes": "Northern and southern in-lake sites combined; most readings between 4 and 10 ft, in the \"Fair\" range. Highest Secchi depth at each site observed 29-Jun. Clarity decreased over 2021."
+        },
+        "totalPhosphorus": {
+          "northAvg": 0.043,
+          "southAvg": 0.166,
+          "peak": 0.408,
+          "unit": "mg/L",
+          "notes": "Bottom-sample averages; peak of 0.408 mg/L occurred at the southern site on the final sampling event, 26-Oct. Surface TP was generally at or below the lab reporting limit of 0.010 mg/L."
+        },
+        "dissolvedOxygen": {
+          "hypoxiaOnset": "After 29-Jun all deep DO readings were below 4 mg/L (hypoxic) as the lake stratified; bottom DO began decreasing in late June.",
+          "squeezeDays": 2,
+          "fishKills": "no - no fish kills reported in 2022 despite stressful conditions",
+          "notes": "Surface DO ranged 7.4-11.0 mg/L (Excellent); bottom DO ranged 0.0-8.9 mg/L. Two squeeze days (24-Aug and 13-Sep) had no water-column portion satisfying both 4 mg/L DO and 20 C. Equipment failure on 18-Sep limited deep readings below 25 ft afterward."
+        },
+        "pH": {
+          "min": 7.3,
+          "max": 8.7,
+          "avg": null,
+          "unit": "SU",
+          "notes": "Surface pH at in-lake sites ranged 7.3-8.7; bottom pH always lower than surface (ranged about 7.1-8.2) but only 5 of 12 planned bottom data points were viable."
+        },
+        "temperature": {
+          "maxSurfaceC": 28.3,
+          "stratificationNotes": "Surface temperature ranged 13.4-28.3 C; max 28.3 C (north) and 28.1 C (south) on 10-Aug, at the edge of \"Poor.\" About 0.9 C warmer than 2021. Bottom temperatures stable at 2.1-7.0 C (Excellent). Thermocline formed in June; stratification persisted through September, mixing resumed October-November. Bottom temp data unavailable after 24-Aug due to probe cable issues."
+        },
+        "cyanobacteria": {
+          "peakDensity": null,
+          "unit": "cells/mL",
+          "blooms": "No blooms during the bathing season; WCMC never indicated high bloom risk at beach areas. Ephemeral scums reported in the southern lake in late-October, earlier than usual. Genera observed: Dolichospermum, Microcystis, Woronichinia, Aphanizomenon.",
+          "notes": "Phycocyanin detected in 4 of 8 sampling sessions, never exceeding 50 ug/L bloom threshold; highest result approached 46 ug/L in late October. Relative density ranged low to high. Overall bloom/toxin exposure risk rose from \"almost none\" to \"low\" to \"elevated\" by October. Peak density reported only as relative (qualitative), not as cells/mL."
+        },
+        "pfas": {
+          "totalRegulated": "13.3 ng/L (8/24/2022) and 16.13 ng/L (7/27/2022)",
+          "mcl": "20 ng/L",
+          "belowMCL": true,
+          "notes": "Total of 6 regulated PFAS species per sampling day; both below the 20 ng/L drinking-water MCL and a decrease from 2019 results. PFAS not a concern for recreational users."
+        }
+      },
+      "events": [
+        {
+          "name": "Lake Ave Sewer Pump Station Overflow",
+          "date": "2022-02-06",
+          "description": "A pump at the Worcester Sewer Pump Station on Lake Ave catastrophically failed, flooding the building and overflowing 5.75 million gallons of untreated sewage over 36 hours into Lake Quinsigamond south of the Route 9 bridge. DIS issued a Recreational Contact Advisory; L&P conducted targeted monitoring over two months.",
+          "impact": "Results suggested water quality was not significantly adversely affected in the short term: bacteria dropped quickly, nutrients and oxygen only slightly affected, no fish kills, metals and VOCs generally not detected."
+        },
+        {
+          "name": "Belmont Street Construction Sediment Runoff",
+          "date": "2020-10 to 2022-04 (sampled 25-Mar-2022)",
+          "description": "During heavy rainfall, sediment plumes emanated from the Route 9 stormwater outfall, traced to active construction sites along Belmont Street and Hospital Drive with exposed soils. Occurred a minimum of six times between Oct 2020 and Apr 2022. On 25-Mar-2022 L&P sampled a visible plume.",
+          "impact": "Very low clarity at the outfall, reduced clarity for at least a half mile south; total phosphorus reached 4.66 mg/L at the outfall (over 100x typical lake levels). DO stayed above 6 mg/L and E. coli was low. Sediment controls eventually enforced and sites stabilized."
+        }
+      ],
+      "invasives": {
+        "speciesPresent": [
+          "Eurasian Milfoil (Myriophyllum spicatum)",
+          "Variable Leaf Milfoil (Myriophyllum heterophyllum)",
+          "Fanwort (Cabomba caroliniana)",
+          "Brittle Naiad (Najas minor)",
+          "Curly Leafed Pondweed (Potamogeton crispus)",
+          "Water Chestnut (Trapa natans)",
+          "Sacred Lotus (Nelumbo nucifera)",
+          "Corbicula fluminea (invasive mollusk)"
+        ],
+        "treatments": "Lake Quinsigamond Commission's invasive plant management plan includes an annual 3-foot lake drawdown and herbicide treatment (complicated by an endangered pondweed present in the lake). Community Water Chestnut hand-pulling events were organized by LQWA throughout July and August 2022, with volunteers in kayaks and small boats. An L&P-contracted aquatic plant survey in 2022 mapped invasive distribution.",
+        "notes": "A 2022 survey identified six invasive aquatic plants (Sacred Lotus listed in background but not in the 2022 survey list) plus 15 native species. Eurasian Milfoil and Fanwort were most concerning, in high density in the southern lake and Flint Pond. Water Chestnut most abundant in the Round Pond area. Corbicula fluminea shells found by residents since 2018 but no live specimen collected to date."
+      },
+      "management": "Aquatic plant management by the Lake Quinsigamond Commission (annual 3-ft drawdown, herbicide treatment); nutrient management by L&P. A stormwater biofiltration BMP near Coal Mine Brook (installed 2020) targets sediment and nutrient loading, with an educational sign on the East-West Trail. Community Water Chestnut hand-pulling events (LQWA) ran July-August 2022. A continuous monitoring buoy was relocated south of the Route 9 outfall near Ramshorn Island to track disturbance effects. An L&P-contracted invasive plant survey mapped current distribution. Ongoing tributary E. coli monitoring partnership with LQWA and LQC at 10 locations.",
+      "plans": "For 2023, L&P plans to continue water quality monitoring with a newly purchased probe cable to restore deep DO/temperature readings; develop and implement a sustainable invasive aquatic plant management plan with LQC, LQWA, Shrewsbury and Grafton; launch an online cyanobacteria scum reporting form and notification system developed with DPH; pursue litter reduction strategies with DPW & Parks and Worcester Green Corps, including re-release of the \"Blue Space Minute\" litter episode; and release a text message alert system for beach closures and boat ramp/invasive treatment notifications.",
+      "keyFindings": [
+        "Overall state rated \"Good\" for 2022, unchanged from 2021.",
+        "Regatta Point beach closed 32 days over 4 events; Lake Park had no closures; open-water bacteria stayed low.",
+        "Dissolved oxygen rated \"Fair\" - deep-water hypoxia after 29-Jun and two \"squeeze\" days (24-Aug, 13-Sep), but no fish kills.",
+        "Bottom total phosphorus rose sharply at the southern site, peaking at 0.408 mg/L on 26-Oct, while surface TP stayed very low.",
+        "Two major disturbances: a 5.75-million-gallon February sewage overflow and repeated Belmont Street construction sediment runoff (outfall TP 4.66 mg/L)."
+      ],
+      "figures": [
+        {
+          "page": 6,
+          "title": "Figure 3 - Secchi depth ranged from the \"Good\" to \"Fair\" categories with depths of 6.75-16 feet",
+          "type": "line",
+          "parameter": "Secchi transparency depth",
+          "site": "north",
+          "unit": "ft",
+          "series": [],
+          "ratingBands": "Excellent/Good/Fair/Poor bands shown; readings mostly Fair (4-10 ft), highest on 29-Jun",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 6,
+          "title": "Figure 4 - Secchi depth was overall \"Good\" to \"Fair\" ranging from 7-17 feet",
+          "type": "line",
+          "parameter": "Secchi transparency depth",
+          "site": "south",
+          "unit": "ft",
+          "series": [],
+          "ratingBands": "Excellent/Good/Fair/Poor bands shown; season high on 29-Jun then mostly Fair",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 5 - Temperature at Northern Site (surface and bottom)",
+          "type": "line",
+          "parameter": "Water temperature",
+          "site": "north",
+          "unit": "C",
+          "series": [
+            {
+              "date": "2022-08-10",
+              "value": 28.3
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair/Poor bands; surface peaked ~28.3 C on 10-Aug at edge of Poor; bottom consistently 6 C or below (Excellent)",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 6 - Temperature at Southern Site (surface and bottom)",
+          "type": "line",
+          "parameter": "Water temperature",
+          "site": "south",
+          "unit": "C",
+          "series": [
+            {
+              "date": "2022-08-10",
+              "value": 28.1
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair/Poor bands; surface peaked ~28.1 C on 10-Aug; bottom near 6 C (Excellent)",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 7 - Dissolved Oxygen at Northern Site (surface and bottom)",
+          "type": "line",
+          "parameter": "Dissolved oxygen",
+          "site": "north",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface stayed Excellent (7.4-11.0 mg/L); bottom generally Poor, hypoxic/anoxic after 29-Jun",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 8 - Dissolved Oxygen at Southern Site (surface and bottom)",
+          "type": "line",
+          "parameter": "Dissolved oxygen",
+          "site": "south",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface Excellent all season; bottom generally Poor (down to 0.0 mg/L)",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 10,
+          "title": "Figure 9 - pH at Northern Site",
+          "type": "line",
+          "parameter": "pH",
+          "site": "north",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Bottom pH 7.1-8.2; surface pH 7.4-8.7",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 10,
+          "title": "Figure 10 - pH at Southern Site",
+          "type": "line",
+          "parameter": "pH",
+          "site": "south",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Bottom pH 7.2-7.7; surface pH 7.3-8.7",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 11,
+          "title": "Figure 11 - Total Phosphorus at Northern Site (surface, bottom, bottom TDP)",
+          "type": "line",
+          "parameter": "Total phosphorus",
+          "site": "north",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface primarily Excellent; bottom TP increased to Poor by season end; northern bottom avg 0.043 mg/L",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 11,
+          "title": "Figure 12 - Total Phosphorus at South Site (surface, bottom, bottom TDP)",
+          "type": "line",
+          "parameter": "Total phosphorus",
+          "site": "south",
+          "unit": "mg/L",
+          "series": [
+            {
+              "date": "2022-10-26",
+              "value": 0.408
+            }
+          ],
+          "ratingBands": "Surface primarily Excellent; bottom TP reached Poor, peaking 0.408 mg/L on 26-Oct; southern bottom avg 0.166 mg/L",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 12,
+          "title": "Figure 13 - Phycocyanin measured by WCMC",
+          "type": "line",
+          "parameter": "Phycocyanin (cyanobacteria indicator)",
+          "site": "beach (Regatta Point swimming area)",
+          "unit": "ug/L",
+          "series": [],
+          "ratingBands": "50 ug/L bloom threshold shown; never exceeded; highest ~46 ug/L at last late-October session; detected in 4 of 8 sessions",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 13,
+          "title": "Figure 14 - Dissolved Oxygen in CFR Tributaries (Coal Mine Brook, Poor Farm Brook)",
+          "type": "line",
+          "parameter": "Dissolved oxygen",
+          "site": "tributaries (CFR)",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "DO above 8 mg/L all season; Excellent in summer, Good for last two fall readings under tightened standards",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 13,
+          "title": "Figure 15 - Dissolved Oxygen in non-CFR Tributaries (Billings Brook, Spillway)",
+          "type": "line",
+          "parameter": "Dissolved oxygen",
+          "site": "tributaries (Billings Brook, Spillway)",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Billings Brook mostly Poor (below 4 mg/L); Spillway generally Fair",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 14,
+          "title": "Figure 16 - Total Phosphorus in Tributaries",
+          "type": "line",
+          "parameter": "Total phosphorus",
+          "site": "tributaries",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Spillway and Coal Mine Brook generally below 0.025 mg/L (Excellent); Billings Brook highest, Fair to Poor even on dry days",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 14,
+          "title": "Figure 17 - Invasive plant cover in Lake Quinsigamond as of late-summer 2022",
+          "type": "map",
+          "parameter": "Invasive aquatic plant distribution",
+          "site": "whole lake",
+          "unit": "",
+          "series": [],
+          "ratingBands": "Eurasian Milfoil and Fanwort high density in southern lake/Flint Pond; Water Chestnut in Round Pond area",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 18,
+          "title": "Figure 19 - Relative abundance of litter categories (2021 Lake Park study)",
+          "type": "bar",
+          "parameter": "Litter category relative abundance (1=lowest, 5=highest)",
+          "site": "Lake Park",
+          "unit": "rank 1-5",
+          "series": [
+            {
+              "date": "Small Items",
+              "value": 5
+            },
+            {
+              "date": "Food Packaging",
+              "value": 3.4
+            },
+            {
+              "date": "Tobacco Products",
+              "value": 3.3
+            },
+            {
+              "date": "Bags",
+              "value": 2.2
+            },
+            {
+              "date": "Bottles",
+              "value": 2.2
+            },
+            {
+              "date": "Plastic Cups",
+              "value": 1.9
+            },
+            {
+              "date": "Clothing",
+              "value": 1.8
+            },
+            {
+              "date": "Glass",
+              "value": 1.7
+            },
+            {
+              "date": "Recreational/Toys",
+              "value": 1.7
+            },
+            {
+              "date": "Junk",
+              "value": 1.7
+            }
+          ],
+          "ratingBands": "Rating 1=lowest abundance, 5=highest",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 19,
+          "title": "Figure 20 - Lake Ave Sewer Pump Station flooding/overflow (Feb 2022)",
+          "type": "photo",
+          "parameter": "Sewage overflow event",
+          "site": "Lake Ave pump station",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 20,
+          "title": "Figure 21 - Sediment plumes from Route 9 stormwater outfall",
+          "type": "photo",
+          "parameter": "Construction sediment runoff",
+          "site": "Route 9 outfall",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 20,
+          "title": "Figure 22 - Fine sediments reducing clarity from Belmont St construction",
+          "type": "photo",
+          "parameter": "Sediment/turbidity impact",
+          "site": "southern lake",
+          "unit": "",
+          "series": [],
+          "ratingBands": "TP reached 4.66 mg/L at outfall, over 100x typical lake levels",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 26,
+          "title": "Appendix: Depth Profiles - Northern Site (temperature and DO by depth, 12 events)",
+          "type": "depth-profile",
+          "parameter": "Temperature and dissolved oxygen vs depth",
+          "site": "north",
+          "unit": "C / mg/L",
+          "series": [],
+          "ratingBands": "Shows thermocline development and deep hypoxia onset; readings limited to 65 ft after 15-Jun, below 25 ft unavailable after 18-Sep",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 27,
+          "title": "Appendix: Depth Profiles - Southern Site (temperature and DO by depth, 12 events)",
+          "type": "depth-profile",
+          "parameter": "Temperature and dissolved oxygen vs depth",
+          "site": "south",
+          "unit": "C / mg/L",
+          "series": [],
+          "ratingBands": "Shows thermocline and deep oxygen depletion through the season",
+          "confidence": "low",
+          "galleryWorthy": false
+        }
+      ],
+      "caveats": [
+        "No statistical analysis was performed; raw data only. Ratings use MassDEP SMART Monitoring Watershed Report Card Criteria.",
+        "Long probe cable difficulties prevented collection of bottom temperature and DO data after 24-Aug.",
+        "An equipment failure on 18-Sep prevented DO readings below 25 ft for the rest of the season.",
+        "Temperature/DO depth readings were limited to 65 ft after 15-Jun due to equipment issues.",
+        "Bottom pH: only 5 of 12 planned data points were viable (cable issues plus two censored datasets), limiting conclusions.",
+        "Ammonia (NH3) data were excluded due to extensive QAQC issues at Alpha Analytical Laboratory.",
+        "Drought (Level 3 Critical, July-August) left Coal Mine Brook and Poor Farm Brook without enough water to sample for 3 and 4 events respectively; 2022 was the longest L&P has observed Coal Mine Brook with no flow.",
+        "Cyanobacteria density reported as relative/qualitative (low to high), not as absolute cells/mL counts.",
+        "Tracking transient fall cyanobacteria scum reports across the large lake is difficult given limited L&P staffing.",
+        "Secchi readings near the Route 9 outfall were generally obscured by heavy aquatic plant growth."
+      ]
+    },
+    "2023": {
+      "year": 2023,
+      "overallState": "Good/Fair",
+      "summary": "In 2023 Lake Quinsigamond received an overall 'Good/Fair' rating from the City of Worcester Lakes and Ponds Program. The lake was sampled semimonthly from May through October at seven sites: three tributaries, the northern and southern deep in-lake sites, and the Irish Dam outlet. Fecal bacteria were the season's main recreational concern: DCR closed Regatta Point beach for 63 days (two closure events, 18 tests) and Lake Park beach for 25 days (three closure events, ~17-18 tests), longer than 2021 and 2022, likely due to a very wet summer washing goose droppings into the water, earning a 'Fair' bacteria rating. Water clarity declined to a 'Fair' rating for the first time, with Secchi depths of 4.75-13.25 ft. Surface dissolved oxygen stayed 'Excellent' but bottom water became hypoxic after late May, producing three days when no part of the column met both 4 mg/L DO and 20C for cold-water fish ('the squeeze'). Surface phosphorus stayed very low while bottom phosphorus, especially at the southern site, rose to 0.388 mg/L. Cyanobacteria never reached bloom thresholds during the bathing season ('Good'), though fall scums were again reported. Herbicide treatment of invasive milfoil and fanwort in the northern lake was successful.",
+      "ratings": {
+        "fecalBacteria": "Fair",
+        "waterClarity": "Fair",
+        "temperature": "Good",
+        "dissolvedOxygen": "Fair",
+        "pH": null,
+        "nutrients": null,
+        "cyanobacteria": "Good",
+        "invasiveSpecies": null,
+        "tributaries": null,
+        "litter": null
+      },
+      "beaches": {
+        "regattaPoint": {
+          "daysClosed": 63,
+          "closureEvents": 2,
+          "timesTested": 18,
+          "notes": "Tested 18 times by DCR for Enterococcus; closed on two occasions for a total of 63 days. Longer closures than in 2021 and 2022, likely due to rain washing goose droppings into the water."
+        },
+        "lakePark": {
+          "daysClosed": 25,
+          "closureEvents": 3,
+          "timesTested": 18,
+          "notes": "Text on p.5 states tested 18 times resulting in three closures totaling 25 days; Table 1 caption states 17 times. Beaches closed when single-day max Enterococcus exceeded 61 MPN or geometric mean exceeded 33."
+        }
+      },
+      "metrics": {
+        "secchiClarityFt": {
+          "min": 4.75,
+          "max": 13.25,
+          "avg": null,
+          "unit": "ft",
+          "notes": "Combined range across both in-lake sites 4.75-13.25 ft; most readings 4-10 ft ('Fair'). Highest readings for each site on 14-Jun. Fig 3 (North) caption: 4.75-12.25 ft; Fig 4 (South) caption: 5-13.25 ft. First time clarity rated 'Fair'."
+        },
+        "totalPhosphorus": {
+          "northAvg": null,
+          "southAvg": null,
+          "peak": 0.388,
+          "unit": "mg/L",
+          "notes": "Surface TP consistently below 0.025 mg/L ('Excellent') at both sites. Bottom TP ranged from below reporting limit to 0.388 mg/L; increased over the season, highest on final event 26-Sep. Southern Site bottom max 0.388 mg/L; Northern Site bottom max 0.037 mg/L. Bottom TDP up to 0.079 mg/L. No per-site averages reported."
+        },
+        "dissolvedOxygen": {
+          "hypoxiaOnset": "After 24-May all bottom DO readings were below 4 mg/L as the lake stratified; bottom DO ranged 0.07-6.64 mg/L",
+          "squeezeDays": 3,
+          "fishKills": "None reported; risk noted from 'the squeeze' (habitat compression for cold-water fish)",
+          "notes": "Surface DO 6.93-11.12 mg/L ('Excellent') all season. Three days (14-Aug, 24-Aug, 16-Sep) had no portion of the water column meeting both 4 mg/L DO and 20C at both sites. DO rated 'Fair' (report mislabels this as 'Temperature' on p.10)."
+        },
+        "pH": {
+          "min": 6.61,
+          "max": 7.9,
+          "avg": null,
+          "unit": "SU",
+          "notes": "Surface in-lake pH 7.19-7.90; bottom always lower than surface, 6.61-7.48. Healthy local range cited as 6.5-8.5. No pH letter rating stated in text."
+        },
+        "temperature": {
+          "maxSurfaceC": 27.0,
+          "stratificationNotes": "Surface temperature at North and South sites ranged 14.2-27.0C, max on 26-Jul (highest readings 26.6-28.3C, 'Fair'). Bottom temps stable 5.4-6.3C due to summer stratification. Thermocline formed in June and persisted through September; turnover/mixing increased Oct-Nov. May surface-to-bottom difference only 9.8C. Tributaries: Billings Brook and outlet 10.8-26.1C; Coal Mine Brook and Poor Farm Brook (cold-water fisheries) 10.7-21.2C."
+        },
+        "cyanobacteria": {
+          "peakDensity": null,
+          "unit": "ug/L phycocyanin",
+          "blooms": "No blooms during bathing season; ephemeral scums reported by residents in the southern lake in late October (earlier than usual, as also in 2022)",
+          "notes": "WCMC sampled 13 sessions; phycocyanin detected in 8 sessions, never exceeded 50 ug/L (bloom threshold). Relative density ranged 'none' to 'some', highest in last session. Overall bloom/toxin risk rose from 'almost none' to 'low' to 'elevated' for 5 sessions between late July and October. Genera: Dolichospermum, Microcystis, Woronichinia, Aphanizomenon, plus Microcystis debris. No peak cell density (cells/mL) reported; phycocyanin in ug/L is the reported unit."
+        },
+        "pfas": {
+          "totalRegulated": null,
+          "mcl": "20 ng/L",
+          "belowMCL": null,
+          "notes": "PFAS and other industrial contaminants are tested every three years. They were tested in 2022 (23 PFAS compounds, no results of concern) and were NOT tested in 2023. No PFAS values or 20 ng/L MCL comparison appear in the 2023 report."
+        }
+      },
+      "events": [
+        {
+          "name": "Herbicide treatment (invasive plants)",
+          "date": "2023-08-23",
+          "description": "Contracted chemical treatment of Eurasian Milfoil, Variable Milfoil, and Fanwort in the Northern section of the lake using Flumigard SC (Flumioxazin) and ProcellaCOR (Florpyrauxifen-benzyl).",
+          "impact": "Post-treatment survey found no target species; deemed successful. Follow-up survey recommended for spring 2024."
+        },
+        {
+          "name": "Water Chestnut hand-pulling event",
+          "date": "2023-07",
+          "description": "LQWA organized a volunteer hand-pulling event; volunteers worked from kayaks and small boats to clear Water Chestnut patches.",
+          "impact": "Slowed spread of an early-stage Water Chestnut infestation; ongoing seasonal management needed."
+        },
+        {
+          "name": "Heavy rain / wet-weather sampling days",
+          "date": "2023 (27-Jun, 11-Jul, 26-Jul, 12-Sep)",
+          "description": "Second-wettest summer on record in Worcester. Wet-weather sampling: 27-Jun 0.81 in, 11-Jul 2.50 in, 26-Jul 0.38 in, 12-Sep 2.50 in of rain in prior 24 hours.",
+          "impact": "Rain events linked to longer beach closures by washing goose droppings and runoff into the water."
+        },
+        {
+          "name": "First mid-lake bacteria exceedance (LQWA)",
+          "date": "2023",
+          "description": "LQWA tributary E. coli program recorded 1046.2 MPN/100 mL at the North Basin mid-point.",
+          "impact": "First time a result over the 235 cells/100 mL recreational threshold was seen in the middle of the lake."
+        },
+        {
+          "name": "Text message alert system launch",
+          "date": "2023",
+          "description": "L&P launched a text alert system notifying residents of beach closures and boat-ramp closures for invasive plant treatments.",
+          "impact": "Improved public access information, especially for transit-dependent lake users."
+        }
+      ],
+      "invasives": {
+        "speciesPresent": [
+          "Eurasian Milfoil (Myriophyllum spicatum)",
+          "Variable Leaf Milfoil (Myriophyllum heterophyllum)",
+          "Fanwort (Cabomba caroliniana)",
+          "Brittle Naiad (Najas minor)",
+          "Curly Leafed Pondweed (Potamogeton crispus)",
+          "Water Chestnut (Trapa natans)",
+          "Sacred Lotus (Nelumbo nucifera)",
+          "Corbicula fluminea (invasive Asian clam/mollusk)"
+        ],
+        "treatments": "Chemical treatment of Eurasian Milfoil, Variable Milfoil, and Fanwort in the Northern section on 23-Aug-2023 (Flumigard SC + ProcellaCOR), successful with no target species in post-treatment survey. LQWA-organized Water Chestnut hand-pulling event in July 2023. Annual 3-foot lake drawdown also used by LQC.",
+        "notes": "2022 contracted survey mapped invasive distribution; 15 native species also identified. Rare Vasey's pondweed (Potamogeton vaseyi) present (Old Faith Cove, Half Moon Bay) complicates herbicide use. Eurasian Milfoil and Fanwort densest in southern lake/Flint Pond; Water Chestnut most abundant in Round Pond area. Corbicula fluminea identified 2018; only shells found, no live specimen to date."
+      },
+      "management": "Management is shared by the Lake Quinsigamond Commission (LQC), the City of Worcester, the Town of Shrewsbury, and the Town of Grafton. LQC handles aquatic plant management (invasive plant plan since 2018, annual 3-ft drawdown, herbicide treatment) and L&P handles nutrient management. In 2023 L&P coordinated herbicide treatment of milfoil and fanwort (23-Aug) and continued operating a stormwater BMP (rain garden with underdrain) near Coal Mine Brook installed in 2020. Continuous monitoring buoys (installed 2021) track phycocyanin, chlorophyll, turbidity, and temperature every 30 minutes; the southern buoy was relocated near the Route 9 outfall.",
+      "plans": "For 2024, L&P plans to: continue semimonthly water quality monitoring; conduct a spring 2024 follow-up survey of the herbicide treatment area; continue invasive plant management with LQC; improve the resident cyanobacteria scum reporting form (developed with DPH) and make it more user-friendly; continue the text-message alert system; and collaborate with DSR on a new Zero Waste Master Plan to mitigate litter impacts on lakes and ponds.",
+      "keyFindings": [
+        "Overall 'Good/Fair' State of the Lake rating for 2023.",
+        "Beach closures were the season's main concern: Regatta Point closed 63 days (2 events) and Lake Park closed 25 days (3 events), longer than 2021-2022, attributed to a record-wet summer washing goose droppings into the water; bacteria rated 'Fair'.",
+        "Water clarity declined to a 'Fair' rating for the first time, with Secchi depths of 4.75-13.25 ft and most readings 4-10 ft.",
+        "Strong summer stratification drove bottom-water hypoxia (bottom DO below 4 mg/L after 24-May, as low as 0.07 mg/L); on 3 days (14-Aug, 24-Aug, 16-Sep) no part of the column met both 4 mg/L DO and 20C, 'squeezing' cold-water fish habitat.",
+        "Surface phosphorus stayed very low ('Excellent'), but bottom phosphorus rose over the season, peaking at 0.388 mg/L at the southern site; cyanobacteria stayed below bloom thresholds during the bathing season ('Good') though fall scums recurred."
+      ],
+      "figures": [
+        {
+          "page": 3,
+          "title": "Figure 1 - Treatment area for herbicide application on 23-Aug 2023",
+          "type": "map",
+          "parameter": "invasive plant herbicide treatment area",
+          "site": "Northern Lake Quinsigamond",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 4,
+          "title": "Figure 2 - Lake Quinsigamond map and approximate sampling locations",
+          "type": "map",
+          "parameter": "sampling site locations",
+          "site": "Lake Quinsigamond (whole)",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 3 - Secchi depth at Northern Site",
+          "type": "line",
+          "parameter": "Secchi transparency",
+          "site": "Northern in-lake site",
+          "unit": "ft",
+          "series": [
+            {
+              "date": "14-Jun",
+              "value": 12.25
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair; range 4.75-12.25 ft, mostly 'Fair'",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 4 - Secchi depth at Southern Site",
+          "type": "line",
+          "parameter": "Secchi transparency",
+          "site": "Southern in-lake site",
+          "unit": "ft",
+          "series": [
+            {
+              "date": "14-Jun",
+              "value": 13.25
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair; range 5-13.25 ft, mostly 'Fair'",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 5 - Temperature at Northern Site",
+          "type": "line",
+          "parameter": "temperature (surface & bottom)",
+          "site": "Northern in-lake site",
+          "unit": "C",
+          "series": [
+            {
+              "date": "late-Jun",
+              "value": 27.0
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair/Poor; surface peak ~27C late June, bottom 5.4-6.1C",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 6 - Temperature at Southern Site",
+          "type": "line",
+          "parameter": "temperature (surface & bottom)",
+          "site": "Southern in-lake site",
+          "unit": "C",
+          "series": [
+            {
+              "date": "late-Jun",
+              "value": 26.7
+            }
+          ],
+          "ratingBands": "Excellent/Good/Fair/Poor; surface peak ~26.7C, bottom 5.7-6.3C",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 7 - Tributary Temperature",
+          "type": "line",
+          "parameter": "temperature",
+          "site": "Tributaries (Coal Mine, Poor Farm, Billings Brooks, spillway, North Culvert)",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "North Culvert highest; Poor Farm & Coal Mine Brook (CFR) lowest, 10.7-21.2C",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 9,
+          "title": "Figure 8 - Dissolved Oxygen at Northern Site",
+          "type": "line",
+          "parameter": "dissolved oxygen (surface & bottom)",
+          "site": "Northern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface 'Excellent' all season (6.93-11.12); bottom generally 'Poor' (down to 0.07)",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 9,
+          "title": "Figure 9 - Dissolved Oxygen at Southern Site",
+          "type": "line",
+          "parameter": "dissolved oxygen (surface & bottom)",
+          "site": "Southern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface 'Excellent' all season; bottom generally 'Poor' after late May",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 10,
+          "title": "Figure 10 - Dissolved Oxygen at CFR Tributaries",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Coal Mine Brook & Poor Farm Brook (CFR)",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Consistently above 6 mg/L, 'Excellent' all season",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 10,
+          "title": "Figure 11 - Dissolved Oxygen at non-CFR Tributaries",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Billings Brook, spillway, North Culvert",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Billings Brook mostly 'Poor' (below 4 mg/L except 3 readings); spillway 'Excellent'/'Good'",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 11,
+          "title": "Figure 12 - pH at Northern Site",
+          "type": "line",
+          "parameter": "pH (surface & bottom)",
+          "site": "Northern in-lake site",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Bottom 6.61-7.48; surface 7.19-7.90",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 11,
+          "title": "Figure 13 - pH at Southern Site",
+          "type": "line",
+          "parameter": "pH (surface & bottom)",
+          "site": "Southern in-lake site",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Bottom 6.67-7.19; surface 7.19-7.83",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 12,
+          "title": "Figure 14 - Total Phosphorus at Northern Site",
+          "type": "line",
+          "parameter": "total phosphorus (surface & bottom)",
+          "site": "Northern in-lake site",
+          "unit": "mg/L",
+          "series": [
+            {
+              "date": "26-Sep",
+              "value": 0.037
+            }
+          ],
+          "ratingBands": "Primarily 'Excellent'; bottom max ~0.037 mg/L",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 12,
+          "title": "Figure 15 - Total Phosphorus at Southern Site",
+          "type": "line",
+          "parameter": "total phosphorus (surface & bottom)",
+          "site": "Southern in-lake site",
+          "unit": "mg/L",
+          "series": [
+            {
+              "date": "26-Sep",
+              "value": 0.388
+            }
+          ],
+          "ratingBands": "Surface 'Excellent'; bottom varies 'Excellent' to 'Poor', peak 0.388 mg/L on 26-Sep",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 12,
+          "title": "Figure 16 - Total Phosphorus in Tributaries",
+          "type": "line",
+          "parameter": "total phosphorus",
+          "site": "Tributaries",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Four tributaries 'Good'/'Excellent'; Billings Brook variable 'Good' to 'Poor'",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 13,
+          "title": "Figure 17 - Phycocyanin (WCMC)",
+          "type": "line",
+          "parameter": "phycocyanin",
+          "site": "Regatta Point & Lake Park beach areas",
+          "unit": "ug/L",
+          "series": [],
+          "ratingBands": "Consistently below 50 ug/L bloom threshold; detected 8 of 13 sessions; higher in second half of season",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 14,
+          "title": "Figure 18 - Invasive plant cover (late-summer 2022)",
+          "type": "map",
+          "parameter": "invasive plant distribution",
+          "site": "Lake Quinsigamond (whole)",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 15,
+          "title": "Figure 19 - Invasive mollusk Corbicula fluminea",
+          "type": "photo",
+          "parameter": "invasive species",
+          "site": "Lake Quinsigamond",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 16,
+          "title": "Figure 20 - LQWA volunteer E. coli sampling",
+          "type": "photo",
+          "parameter": "fecal bacteria sampling",
+          "site": "Lake Quinsigamond tributaries",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 17,
+          "title": "Figure 21 - Continuous monitoring buoy",
+          "type": "photo",
+          "parameter": "continuous monitoring",
+          "site": "South of Route 9 outfall",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 18,
+          "title": "Figure 22 - Volunteers pulling Water Chestnut",
+          "type": "photo",
+          "parameter": "invasive plant removal",
+          "site": "Lake Quinsigamond",
+          "unit": "",
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 19,
+          "title": "Appendix: Depth Profiles - Northern Site",
+          "type": "depth-profile",
+          "parameter": "temperature & dissolved oxygen vs depth",
+          "site": "Northern in-lake site",
+          "unit": "C and mg/L vs ft depth",
+          "series": [
+            {
+              "date": "12-May",
+              "value": null
+            },
+            {
+              "date": "24-May",
+              "value": null
+            },
+            {
+              "date": "14-Jun",
+              "value": null
+            },
+            {
+              "date": "28-Jun",
+              "value": null
+            },
+            {
+              "date": "12-Jul",
+              "value": null
+            },
+            {
+              "date": "26-Jul",
+              "value": null
+            },
+            {
+              "date": "14-Aug",
+              "value": null
+            },
+            {
+              "date": "24-Aug",
+              "value": null
+            },
+            {
+              "date": "16-Sep",
+              "value": null
+            },
+            {
+              "date": "26-Sep",
+              "value": null
+            },
+            {
+              "date": "11-Oct",
+              "value": null
+            },
+            {
+              "date": "30-Oct",
+              "value": null
+            }
+          ],
+          "ratingBands": "12 monthly profiles at 5-ft increments; thermocline/oxycline deepen from June onward",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 20,
+          "title": "Appendix: Depth Profiles - Southern Site",
+          "type": "depth-profile",
+          "parameter": "temperature & dissolved oxygen vs depth",
+          "site": "Southern in-lake site",
+          "unit": "C and mg/L vs ft depth",
+          "series": [
+            {
+              "date": "12-May",
+              "value": null
+            },
+            {
+              "date": "24-May",
+              "value": null
+            },
+            {
+              "date": "14-Jun",
+              "value": null
+            },
+            {
+              "date": "28-Jun",
+              "value": null
+            },
+            {
+              "date": "12-Jul",
+              "value": null
+            },
+            {
+              "date": "26-Jul",
+              "value": null
+            },
+            {
+              "date": "14-Aug",
+              "value": null
+            },
+            {
+              "date": "24-Aug",
+              "value": null
+            },
+            {
+              "date": "16-Sep",
+              "value": null
+            },
+            {
+              "date": "11-Oct",
+              "value": null
+            }
+          ],
+          "ratingBands": "Profiles at 5-ft increments; strong stratification with hypoxic hypolimnion through summer",
+          "confidence": "medium",
+          "galleryWorthy": true
+        }
+      ],
+      "caveats": [
+        "Internal inconsistency on Lake Park beach testing count: page 5 text says 'tested 18 times' while the Table 1 caption says 'sampled 17 times'. Days closed (25) and closures (3) agree.",
+        "The report mislabels the Dissolved Oxygen rating as 'Temperature' on page 10 ('L&P rated Temperature ... as Fair'); context and the DO section indicate this 'Fair' applies to Dissolved Oxygen, while Temperature is rated 'Good' on page 8.",
+        "PFAS and industrial contaminants were NOT tested in 2023 (tested on a 3-year cycle, last in 2022). The schema's pfas MCL field (20 ng/L) is not referenced anywhere in this 2023 report; belowMCL is null.",
+        "Cyanobacteria is reported via phycocyanin (ug/L), not cell density (cells/mL); no peak cells/mL value exists, so peakDensity is null and unit reflects the reported phycocyanin metric.",
+        "No letter ratings are stated in the text for pH, nutrients, invasive species, tributaries, or litter; these rating fields are left null rather than guessed.",
+        "Seasonal line-chart values (Secchi, temperature, DO, TP, phycocyanin) are read approximately from figures; only text-stated min/max/peak values are high confidence. Depth-profile series list sampling dates only (per-depth values not numerically transcribable from the small appendix plots).",
+        "Several figure ranges quoted in figure captions differ slightly from body text (e.g., Fig 3 caption 4.75-12.25 ft vs body 4.75-13.25 ft combined); body-text combined ranges used for top-level metrics."
+      ]
+    },
+    "2024": {
+      "year": 2024,
+      "overallState": "Good/Fair",
+      "summary": "In 2024, the City of Worcester's Lakes and Ponds Program rated Lake Quinsigamond \"Good/Fair.\" The largest impediment to recreation was closure of the two DCR state-park beaches due to fecal bacteria (Enterococcus) exceedances: Regatta Point Beach was closed 50 days and Lake Park Beach 24 days, earning a \"Fair\" rating for fecal bacteria. Water clarity improved over 2023, with Secchi depth between 6.75 and 13.25 feet (mostly \"Good\"), rated \"Good\" overall. Surface dissolved oxygen stayed \"Excellent\" all season, but strong summer thermal stratification depleted bottom oxygen and squeezed cold-water fish habitat to a narrow 5-10 foot band between mid-July and mid-September, yielding a \"Fair\" DO rating. Temperature was rated \"Good.\" Surface nutrients were very low, though bottom total phosphorus and ammonia rose sharply as stratification intensified (southern bottom TP peaked at 0.509 mg/L). Cyanobacteria stayed below bloom thresholds during the swimming season (rated \"Good\"), with elevated risk on 27-Jul and 5-Aug. Multiple invasive aquatic plants persist; management and volunteer Water Chestnut removal continued. Two continuous monitoring buoys were deployed.",
+      "ratings": {
+        "fecalBacteria": "Fair",
+        "waterClarity": "Good",
+        "temperature": "Good",
+        "dissolvedOxygen": "Fair",
+        "pH": null,
+        "nutrients": null,
+        "cyanobacteria": "Good",
+        "invasiveSpecies": null,
+        "tributaries": null,
+        "litter": null
+      },
+      "beaches": {
+        "regattaPoint": {
+          "daysClosed": 50,
+          "closureEvents": 2,
+          "timesTested": 18,
+          "notes": "Tested 18 times by DCR for Enterococcus; closed on two occasions for a total of 50 days. Single-sample threshold 61 CFU/100mL, geomean threshold 33. Peak single-sample reading ~228 CFU/100mL on 8/13 (Appendix A, Figure on page 22)."
+        },
+        "lakePark": {
+          "daysClosed": 24,
+          "closureEvents": 3,
+          "timesTested": 19,
+          "notes": "Tested 19 times by DCR for Enterococcus; closed on three occasions for a total of 24 days. Peak single-sample reading ~600 CFU/100mL on 11-Jun; geomean peaked ~78 in early-mid August, exceeding the 33 threshold (Appendix A, page 23)."
+        }
+      },
+      "metrics": {
+        "secchiClarityFt": {
+          "min": 6.75,
+          "max": 13.25,
+          "avg": null,
+          "unit": "ft",
+          "notes": "Northern and Southern in-lake sites combined. Most results 10-15 ft (\"Good\"). Lowest readings on 9-May; readings 17-Jul to 14-Aug consistently \"Fair.\" Generally higher than 2023, indicating better clarity."
+        },
+        "totalPhosphorus": {
+          "northAvg": null,
+          "southAvg": null,
+          "peak": 0.509,
+          "unit": "mg/L",
+          "notes": "Surface TP consistently below 0.025 mg/L (\"Excellent\") at both sites. Bottom TP ranged from below reporting limit to 0.509 mg/L (Southern site max); Northern site bottom max 0.205 mg/L. Bottom TP increased over the season; bottom TDP max 0.381 mg/L. Site-specific seasonal averages not stated in report."
+        },
+        "dissolvedOxygen": {
+          "hypoxiaOnset": "Mid-June at the lake bottom; oxycline shoaled to 25-30 ft deep from 31-Jul through end of monitoring.",
+          "squeezeDays": null,
+          "fishKills": "No fish kills reported in 2024.",
+          "notes": "Surface DO 7.79-10.67 mg/L (\"Excellent\" all season). Bottom DO 0.09-5.37 mg/L; only reading above 4 mg/L was on 9-May. Between 18-Jul and 11-Sep only a 5-10 ft band of water column was habitable for cold-water fish; on 11-Sep no portion of the Northern site satisfied both 4 mg/L DO and 20C CFR temperature simultaneously."
+        },
+        "pH": {
+          "min": 6.67,
+          "max": 7.96,
+          "avg": null,
+          "unit": "SU",
+          "notes": "Surface pH 7.38-7.96; bottom pH 6.67-7.91 (almost always lower than surface). Healthy local range cited as 6.5-8.5."
+        },
+        "temperature": {
+          "maxSurfaceC": 28.4,
+          "stratificationNotes": "Surface temp at in-lake sites 15.2-28.4C; seasonal max at both sites on 17-Jul. Bottom temps low/stable 5.5-6.8C. Greatest surface-to-bottom difference 22.9C on 18-Jul (pronounced stratification). A distinct thermocline persisted through the last October sampling session. Outlet reading of 28.5C on 16-Jul exceeded the in-lake max."
+        },
+        "cyanobacteria": {
+          "peakDensity": null,
+          "unit": "cells/mL",
+          "blooms": "No swimming-season blooms or closures; phycocyanin stayed below the 50 ug/L bloom threshold at Lake Park. Ephemeral scums reported in the southern lake in fall 2024.",
+          "notes": "Lake Park: phycocyanin detected 5 of 7 sessions, highest late Jul/early Aug; relative density ranged none-high. Genera observed: Dolichospermum, Microcystis, Woronichinia, Aphanocapsa, Gomphosphaeria. Overall bloom/toxin risk \"low\" on 5 of 8 sessions, \"elevated\" on 27-Jul and 5-Aug. Oak Island (Flint Pond): phycocyanin highest 22 ug/L late Aug (elevated). Density reported as relative abundance, not absolute cells/mL."
+        },
+        "pfas": {
+          "totalRegulated": null,
+          "mcl": "20 ng/L",
+          "belowMCL": null,
+          "notes": "No 2024 PFAS testing. Industrial contaminants (including 23 PFAS) last tested in 2022 with no results of concern; next round planned for 2025 pending budget. No numeric PFAS value or MCL stated in the 2024 report."
+        },
+        "buoys": {
+          "deployed": true,
+          "measures": "phycocyanin, chlorophyll, turbidity, temperature (uploaded every 30 minutes, 24 hours a day)",
+          "notes": "Two solar-powered continuous monitoring buoys deployed in 2024. Buoy 1 placed just south of the Lake Ave. sewer pumping station and Belmont St./Route 9 outfalls. Buoy 2 placed near Lake Park beach but detached from its mooring in July and was not redeployed due to needed repairs. No buoy time-series chart appears in the report; Figure 22 is a photo of a buoy."
+        }
+      },
+      "events": [
+        {
+          "name": "Northern-section herbicide treatment follow-up survey",
+          "date": "Early June 2024",
+          "description": "L&P surveyed the 31-acre area treated with herbicide in 2023 (Eurasian Milfoil, Variable Milfoil, Fanwort) to assess efficacy.",
+          "impact": "Predominance of native species observed, indicating successful treatment; trace Eurasian Milfoil regrowth in the northernmost area and Curly Leafed Pondweed (untreated) present."
+        },
+        {
+          "name": "Volunteer Water Chestnut removal events",
+          "date": "June-July 2024",
+          "description": "LQWA and a Girl Scout Gold Award candidate organized three hand-pulling events (two at Gauch Park, one at Sunset Beach), with L&P-loaned City kayaks.",
+          "impact": "Cleared patches of Water Chestnut to slow spread during early-stage infestation."
+        },
+        {
+          "name": "Fall cyanobacteria scum reports",
+          "date": "Late September-fall 2024",
+          "description": "Residents reported ephemeral scums in the southern portion of the lake earlier than usual; L&P responded to several reports.",
+          "impact": "Several cyanobacteria types identified; phycocyanin elevated but no public-health concern."
+        },
+        {
+          "name": "Wet-weather sampling day",
+          "date": "9-May-2024",
+          "description": "0.62 inches of rain in the 24 hours prior to sampling; categorized as wet weather. 21 of the visits had <0.25 inches in the prior 24 hours.",
+          "impact": "Lowest Secchi readings of the season at both sites occurred on this day."
+        },
+        {
+          "name": "Level-3 Critical drought",
+          "date": "1-Oct-2024 through 8-Jan-2025",
+          "description": "MA Central Region classified Level-3 Critical drought; fall 2024 was the driest in the period of record. Downgraded to Level-2 on 8-Jan-2025.",
+          "impact": "Reduced tributary flow; Poor Farm Brook went dry from 28-Aug through end of season."
+        }
+      ],
+      "invasives": {
+        "speciesPresent": [
+          "Eurasian Milfoil (Myriophyllum spicatum)",
+          "Variable Leaf Milfoil (Myriophyllum heterophyllum)",
+          "Fanwort (Cabomba caroliniana)",
+          "Brittle Naiad (Najas minor)",
+          "Curly Leafed Pondweed (Potamogeton crispus)",
+          "Water Chestnut (Trapa natans)",
+          "Sacred Lotus (Nelumbo nucifera)",
+          "Asian clam (Corbicula fluminea)"
+        ],
+        "treatments": "2023 chemical (herbicide) treatment of 31 acres of Eurasian Milfoil, Variable Milfoil, and Fanwort in the northern section; 2024 June follow-up survey showed predominantly native species with trace milfoil regrowth. Three volunteer Water Chestnut hand-pulling events held in 2024. Ongoing management includes annual 3-foot drawdown.",
+        "notes": "Endangered Vasey's Pondweed (Potamogeton vaseyi) confirmed in Round Pond and possibly elsewhere, complicating management. No live Corbicula fluminea specimen has been collected to date. An updated comprehensive plant survey is planned for 2025 pending budget. Sacred Lotus listed in Page 2 species list but not in the Page 16 management list."
+      },
+      "management": "Lake managed by the Lake Quinsigamond Commission (LQC) with City of Worcester, Town of Shrewsbury, and Town of Grafton support. Invasive aquatic plant management plan running since 2018 (drawdown, hand-pulling, herbicide). In 2024 L&P leveraged ARPA funding to contract installation of two stormwater particle separators (completion scheduled 2025). Lake sampled twice monthly May-October at seven sites; two continuous monitoring buoys deployed. Text-message beach/boat-ramp alert system (launched 2023) continued.",
+      "plans": "2025 plans: continue twice-monthly monitoring; conduct industrial contaminant (legacy pollutant/PFAS) sampling pending budget; identify and design solutions for fecal bacteria sources; redeploy both monitoring buoys; develop watershed-based plan for Lake Quinsigamond under EPA nine-element framework (consultant CEI) targeting phosphorus, bacteria, and DO goals; complete stormwater particle separator installation; commission an updated comprehensive plant survey pending budget; continue/organize volunteer invasive removal; improve scum-reporting form and public cyanobacteria communication; collaborate on a DSR Zero Waste Master Plan for litter.",
+      "keyFindings": [
+        "Overall rating Good/Fair; beach closures from fecal bacteria were the largest impediment to recreation (Regatta Point 50 days, Lake Park 24 days).",
+        "Water clarity improved over 2023 (Secchi 6.75-13.25 ft, mostly Good); rated Good overall.",
+        "Strong summer thermal stratification (max surface-bottom difference 22.9C on 18-Jul) depleted bottom dissolved oxygen, squeezing cold-water fish to a 5-10 ft habitat band from mid-July to mid-September; DO rated Fair.",
+        "Surface nutrients were very low (surface TP <0.025 mg/L), but bottom total phosphorus (southern max 0.509 mg/L) and ammonia rose sharply with stratification.",
+        "Cyanobacteria stayed below bloom thresholds during the swimming season (rated Good), with elevated risk only on 27-Jul and 5-Aug; fall ephemeral scums reported in the southern lake."
+      ],
+      "figures": [
+        {
+          "page": 7,
+          "title": "Secchi Depth at Northern Site",
+          "type": "line",
+          "parameter": "Secchi transparency",
+          "site": "Northern in-lake site",
+          "unit": "ft",
+          "series": [],
+          "ratingBands": "Excellent/Good/Fair/Poor shaded bands; most points in Good (10-15 ft), some Fair Jul-Aug. Lowest reading 9-May.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Secchi Depth at Southern Site",
+          "type": "line",
+          "parameter": "Secchi transparency",
+          "site": "Southern in-lake site",
+          "unit": "ft",
+          "series": [],
+          "ratingBands": "Excellent/Good/Fair/Poor shaded bands; most points in Good, Fair window 17-Jul to 14-Aug.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Temperature at Northern Site / Southern Site (Figures 6 and 7)",
+          "type": "line",
+          "parameter": "Water temperature (surface and bottom)",
+          "site": "Northern and Southern in-lake sites",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "Surface rises to ~28.4C peak mid-July then declines; bottom flat 5.5-6.8C, showing strong stratification.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Temperature at non-CFR Inlets and Outlet (Figure 8)",
+          "type": "bar",
+          "parameter": "Water temperature",
+          "site": "Billings Brook, North Culvert, Outlet",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "Mostly Excellent; Good/Fair/Poor readings in July. Outlet usually highest (28.5C on 16-Jul).",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 9,
+          "title": "Temperature at CFR Inlets (Figure 9)",
+          "type": "bar",
+          "parameter": "Water temperature",
+          "site": "Coal Mine Brook, Poor Farm Brook (Coldwater Fish Resources)",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "Coal Mine Brook mostly Good, Poor Farm Brook mostly Fair (range 13.4-23.5C); Poor Farm Brook dry after mid-Aug.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 10,
+          "title": "Dissolved Oxygen at Northern Site / Southern Site (Figures 10 and 11)",
+          "type": "line",
+          "parameter": "Dissolved oxygen (surface and bottom)",
+          "site": "Northern and Southern in-lake sites",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface Excellent all season (7.79-10.67 mg/L); bottom generally Poor (0.09-5.37 mg/L), only 9-May above 4 mg/L.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 11,
+          "title": "Dissolved Oxygen at non-CFR Inlets and Outlet; CFR Inlets (Figures 12 and 13)",
+          "type": "bar",
+          "parameter": "Dissolved oxygen",
+          "site": "Billings Brook, North Culvert, Outlet, Coal Mine Brook, Poor Farm Brook",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Billings Brook mostly Poor; outlet Fair/Poor mid-summer; CFR brooks above 8 mg/L (Excellent) all but once.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 12,
+          "title": "pH at Northern Site / Southern Site (Figures 14 and 15)",
+          "type": "line",
+          "parameter": "pH",
+          "site": "Northern and Southern in-lake sites",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Surface 7.38-7.96; bottom 6.67-7.91 (lower than surface).",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 12,
+          "title": "Total Phosphorus at Northern Site / Southern Site (Figures 16 and 17)",
+          "type": "line",
+          "parameter": "Total phosphorus (surface, bottom) and TDP",
+          "site": "Northern and Southern in-lake sites",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface TP Excellent (<0.025); bottom TP rises seasonally to 0.509 mg/L (Southern), spanning Excellent-Poor.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 13,
+          "title": "Total Phosphorus at Inlets and Outlet (Figure 18)",
+          "type": "bar",
+          "parameter": "Total phosphorus",
+          "site": "Coal Mine Brook, Poor Farm Brook, North Culvert, Outlet, Billings Brook",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Mostly Excellent/Good; Billings Brook often highest with occasional Fair.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 14,
+          "title": "Phycocyanin (Figure 19)",
+          "type": "line",
+          "parameter": "Phycocyanin",
+          "site": "Lake Park beach (WCMC)",
+          "unit": "ug/L",
+          "series": [],
+          "ratingBands": "All readings below 50 ug/L bloom threshold; highest late Jul/early Aug.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 22,
+          "title": "Regatta Point Beach Single Sample Bacterial Results / Geomean",
+          "type": "bar",
+          "parameter": "Enterococcus bacteria",
+          "site": "Regatta Point Beach (DCR)",
+          "unit": "CFU/100mL",
+          "series": [
+            {
+              "date": "2024-05-21",
+              "value": 35
+            },
+            {
+              "date": "2024-05-28",
+              "value": 104
+            },
+            {
+              "date": "2024-06-04",
+              "value": 47
+            },
+            {
+              "date": "2024-06-11",
+              "value": 4
+            },
+            {
+              "date": "2024-06-18",
+              "value": 10
+            },
+            {
+              "date": "2024-06-25",
+              "value": 147
+            },
+            {
+              "date": "2024-07-02",
+              "value": 9
+            },
+            {
+              "date": "2024-07-09",
+              "value": 158
+            },
+            {
+              "date": "2024-07-16",
+              "value": 42
+            },
+            {
+              "date": "2024-07-18",
+              "value": 18
+            },
+            {
+              "date": "2024-07-23",
+              "value": 38
+            },
+            {
+              "date": "2024-07-25",
+              "value": 11
+            },
+            {
+              "date": "2024-07-30",
+              "value": 34
+            },
+            {
+              "date": "2024-08-06",
+              "value": 84
+            },
+            {
+              "date": "2024-08-13",
+              "value": 228
+            },
+            {
+              "date": "2024-08-20",
+              "value": 16
+            },
+            {
+              "date": "2024-08-22",
+              "value": 17
+            },
+            {
+              "date": "2024-08-27",
+              "value": 7
+            }
+          ],
+          "ratingBands": "Single-sample threshold 61 CFU/100mL; geomean threshold 33. Several single-sample exceedances; geomean exceeded 33 in mid-July and mid-August.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 23,
+          "title": "Lake Park Beach Single Sample Bacterial Results / Geomean",
+          "type": "bar",
+          "parameter": "Enterococcus bacteria",
+          "site": "Lake Park Beach (DCR)",
+          "unit": "CFU/100mL",
+          "series": [
+            {
+              "date": "2024-05-21",
+              "value": 60
+            },
+            {
+              "date": "2024-05-28",
+              "value": 15
+            },
+            {
+              "date": "2024-06-04",
+              "value": 8
+            },
+            {
+              "date": "2024-06-11",
+              "value": 600
+            },
+            {
+              "date": "2024-06-13",
+              "value": 6
+            },
+            {
+              "date": "2024-07-30",
+              "value": 40
+            },
+            {
+              "date": "2024-07-23",
+              "value": 28
+            },
+            {
+              "date": "2024-08-01",
+              "value": 325
+            },
+            {
+              "date": "2024-08-06",
+              "value": 112
+            },
+            {
+              "date": "2024-08-20",
+              "value": 25
+            }
+          ],
+          "ratingBands": "Single-sample threshold 61 CFU/100mL; geomean threshold 33. Dominant exceedances on 11-Jun (~600) and early-mid August; geomean peaked ~78 in early-mid August.",
+          "confidence": "low",
+          "galleryWorthy": true
+        },
+        {
+          "page": 18,
+          "title": "Continuous monitoring buoy (Figure 22)",
+          "type": "photo",
+          "parameter": "Buoy deployment (phycocyanin, chlorophyll, turbidity, temperature)",
+          "site": "South of Lake Ave. sewer pumping station / Route 9 outfall",
+          "unit": null,
+          "series": [],
+          "ratingBands": "",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 24,
+          "title": "Depth Profiles, Southern Site (Appendix B)",
+          "type": "depth-profile",
+          "parameter": "Temperature and dissolved oxygen vs depth",
+          "site": "Southern in-lake site",
+          "unit": "C and mg/L vs ft depth",
+          "series": [],
+          "ratingBands": "12 dates May-Oct; show progressive thermocline/oxycline development and bottom hypoxia.",
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 25,
+          "title": "Depth Profiles, Northern Site (Appendix B)",
+          "type": "depth-profile",
+          "parameter": "Temperature and dissolved oxygen vs depth",
+          "site": "Northern in-lake site",
+          "unit": "C and mg/L vs ft depth",
+          "series": [],
+          "ratingBands": "12 dates May-Oct; oxycline shoals to 25-30 ft by 31-Jul.",
+          "confidence": "high",
+          "galleryWorthy": true
+        }
+      ],
+      "caveats": [
+        "Page 1 contains an apparent copy-paste error stating the report will outline projects 'at Indian Lake in 2025'; the rest of the report is about Lake Quinsigamond.",
+        "Beach single-sample bacteria values (pages 22-23) were read visually from bar charts and are approximate; exact dates on the Lake Park chart were partly illegible, so some date labels are inferred.",
+        "Cyanobacteria 'peakDensity' in cells/mL is null because the report uses relative density categories (none/low/high), not absolute counts.",
+        "No PFAS or industrial-contaminant testing occurred in 2024 (last done 2022, next planned 2025); no PFAS numeric value or MCL is stated in this report, so the schema's '20 ng/L' MCL is a placeholder not sourced from the 2024 document.",
+        "The 2024 buoys produced no time-series figure in the report (one buoy detached in July); Figure 22 is a photograph, not buoy data.",
+        "Ratings for pH, nutrients, invasiveSpecies, tributaries, and litter are null because the report does not assign discrete Excellent/Good/Fair/Poor State-of-the-Lake ratings to those individual categories.",
+        "Secchi and most metric averages are not stated numerically in the text; only ranges/peaks are reported, so 'avg' fields are null rather than estimated.",
+        "The Page 2 species list includes Sacred Lotus and Sacred Lotus is omitted from the Page 16 managed-species list; both are reported as present."
+      ]
+    },
+    "2025": {
+      "year": 2025,
+      "overallState": "Good",
+      "summary": "In 2025, the City of Worcester's Lakes and Ponds Program rated Lake Quinsigamond's overall State of the Lake as \"Good.\" Unlike recent seasons, fecal bacteria did not significantly limit recreation: DCR tested the Lake Park and Regatta Point beaches 15 times, and Lake Park closed only once for 7 days in late May, while Regatta Point never closed. Water clarity was rated \"Good,\" with Secchi depth between 7.25 and 14.75 ft (most readings in the \"Fair\" 4-10 ft band). Surface water reached up to 28.5 C, producing strong summer stratification; bottom temperatures stayed near 3.8-5.9 C. Surface dissolved oxygen was \"Excellent\" (7.70-11.22 mg/L) but bottom DO was \"Poor\" (0.09-2.35 mg/L), squeezing cold-water fish habitat and earning a \"Fair\" DO rating. Surface phosphorus stayed \"Excellent,\" but bottom TP rose sharply, peaking at 0.673 mg/L at the Southern Site. Cyanobacteria stayed below bloom thresholds (rated \"Good\"). Multiple invasive aquatic plants persist, managed via diver harvesting, volunteer Water Chestnut pulls, and prior herbicide treatment.",
+      "ratings": {
+        "fecalBacteria": "Good",
+        "waterClarity": "Good",
+        "temperature": "Good",
+        "dissolvedOxygen": "Fair",
+        "pH": null,
+        "nutrients": null,
+        "cyanobacteria": "Good",
+        "invasiveSpecies": null,
+        "tributaries": null,
+        "litter": null
+      },
+      "beaches": {
+        "regattaPoint": {
+          "daysClosed": 0,
+          "closureEvents": 0,
+          "timesTested": 15,
+          "notes": "Never closed in 2025. Tested by DCR for Enterococcus 15 times during the swimming season. Single-day max threshold 61 CFU/100mL; geomean limit 33, never exceeded."
+        },
+        "lakePark": {
+          "daysClosed": 7,
+          "closureEvents": 1,
+          "timesTested": 15,
+          "notes": "Closed once for 7 days in late May due to fecal bacteria (Enterococcus) single-day maximum exceedance, the only beach closure in 2025 at either beach. Geomean limit never exceeded."
+        }
+      },
+      "metrics": {
+        "secchiClarityFt": {
+          "min": 7.25,
+          "max": 14.75,
+          "avg": null,
+          "unit": "ft",
+          "notes": "Northern and Southern in-lake sites combined. Most results between 4 and 10 ft (the 'Fair' range). Season's lowest readings at both sites on first session (9-May). Readings 17-Jul through 14-Aug consistently 'Fair'. Surface TSS 1.1-3.6 mg/L ('Excellent')."
+        },
+        "totalPhosphorus": {
+          "northAvg": null,
+          "southAvg": null,
+          "peak": 0.673,
+          "unit": "mg/L",
+          "notes": "Surface TP at both in-lake sites consistently below 0.025 mg/L ('Excellent'). Bottom TP ranged from below reporting limit to 0.673 mg/L; Southern Site bottom max 0.673 mg/L, Northern Site bottom max 0.226 mg/L. Bottom TDP up to 0.172 mg/L. Bottom TP generally increased over the season. Per-site seasonal averages not stated in text."
+        },
+        "dissolvedOxygen": {
+          "hypoxiaOnset": "Early-season DO above 4 mg/L at depths 65 ft and shallower; from 16-Jul through end of monitoring the oxycline was 15-30 ft deep. Surface DO 7.70-11.22 mg/L ('Excellent'); bottom DO 0.09-2.35 mg/L ('Poor').",
+          "squeezeDays": 2,
+          "fishKills": "No fish kills reported; cold-water fish habitat 'squeeze' described, with only a 5-10 ft habitable band between 16-Jul and 8-Oct.",
+          "notes": "Two sampling days at each in-lake site had no portion of the water column meeting both 4 mg/L DO and 20 C CFR temperature requirements (Northern: 10-Sep and 24-Sep; Southern: 27-Aug and 10-Sep). DO rated 'Fair' overall."
+        },
+        "pH": {
+          "min": 6.62,
+          "max": 8.35,
+          "avg": null,
+          "unit": "SU",
+          "notes": "Surface in-lake pH 7.17-8.35; bottom in-lake pH almost always lower, 6.62-6.84 (figure caption also states bottom 6.62-7.73). Tributary pH 6.66-8.22, generally higher at Coal Mine Brook and Poor Farm Brook. Healthy local range 6.5-8.5."
+        },
+        "temperature": {
+          "maxSurfaceC": 28.5,
+          "stratificationNotes": "Surface in-lake temp 13.2-28.5 C; bottom 3.8-5.9 C. Season max at Southern site 16-Jul and Northern site 30-Jul. May surface-bottom difference 12.2 C; greatest difference 23.4 C on 16-Jul indicating pronounced stratification. Distinct thermocline still present at last session (29-Oct), not yet fully mixed. Non-CFR inlets/outlet 5.6-28.3 C; CFR tributaries (Coal Mine, Poor Farm Brook) 5.6-23.4 C."
+        },
+        "cyanobacteria": {
+          "peakDensity": null,
+          "unit": "cells/mL",
+          "blooms": "No blooms; phycocyanin never exceeded 50 ug/L bloom-indicator threshold. Detected at Lake Park in 8 of 12 sessions analyzed.",
+          "notes": "Relative density ranged 'None' to 'High'; rated 'High' twice at Lake Park (18-Aug, 6-Sep) and twice at Flint Pond (21-Jul, 2-Aug), but phycocyanin stayed low. Genera observed: Dolichospermum, Aphanizomenon, Microcystis, Woronichinia, Snowella. Overall bloom/toxin risk 'Almost None' to 'Elevated', all but three rated 'Low'. No beach closures. Report gives relative density categories, not numeric cells/mL."
+        },
+        "pfas": {
+          "totalRegulated": null,
+          "mcl": "20 ng/L",
+          "belowMCL": null,
+          "notes": "No PFAS testing in 2025. Last industrial-contaminant testing (incl. 23 PFAS) was in 2022 with 'no results of concern.' Follow-up planned for summer 2025 was rescheduled to spring 2026 due to program capacity and wet-weather sampling opportunities. No numeric PFAS values or MCL stated in the 2025 report."
+        },
+        "buoys": {
+          "deployed": true,
+          "measures": "phycocyanin, chlorophyll, turbidity, temperature",
+          "notes": "Solar-powered continuous monitoring buoys deployed seasonally since 2022 in Lake Quinsigamond (near Lake Ave Sewer Pump Station) and Flint Pond. To be redeployed in 2026."
+        }
+      },
+      "events": [
+        {
+          "name": "Lake Park Beach closure",
+          "date": "Late May 2025",
+          "description": "Lake Park Beach closed for 7 days following an Enterococcus single-day maximum exceedance.",
+          "impact": "Only beach closure of 2025; minimal impact on recreation overall."
+        },
+        {
+          "name": "Fanwort removal via Diver-Assisted Suction Harvesting (DASH)",
+          "date": "August 2025",
+          "description": "L&P contracted divers to remove Fanwort in the Round Pond section, where it was densely intermixed with endangered Vasey's Pondweed.",
+          "impact": "Slow method; only a small fraction of Round Pond Fanwort addressed with available funds."
+        },
+        {
+          "name": "Water Chestnut volunteer removal events",
+          "date": "June-July 2025",
+          "description": "LQWA and L&P co-hosted two volunteer hand-pulling events north of Route 70 / Lincoln Street using canoes and kayaks.",
+          "impact": "Limited spread of the early-stage Water Chestnut infestation."
+        },
+        {
+          "name": "Particle separator installation",
+          "date": "Completed late 2025",
+          "description": "Two particle separators installed in stormwater drainage lines discharging into Lake Quinsigamond (e.g., Suntaug Road), funded by ARPA.",
+          "impact": "Reduces sediment and nutrient input into the lake."
+        },
+        {
+          "name": "Professional aquatic plant survey",
+          "date": "August 2025",
+          "description": "Mapped extents of Fanwort, Eurasian Milfoil, Variable Leaf Milfoil, Brittle Naiad, Water Chestnut, and Common Reed plus overall plant cover.",
+          "impact": "Confirmed 2023 herbicide treatment success; Eurasian Milfoil reduced to two small patches near Ramshorn Island."
+        },
+        {
+          "name": "Watershed-based planning public workshops",
+          "date": "April 2025",
+          "description": "Public workshops gathered community input on pollutant sources to guide field assessments for stormwater control measures.",
+          "impact": "Informed 9-Element EPA watershed-based plan for grant eligibility."
+        }
+      ],
+      "invasives": {
+        "speciesPresent": [
+          "Eurasian Milfoil (Myriophyllum spicatum)",
+          "Variable Leaf Milfoil (Myriophyllum heterophyllum)",
+          "Fanwort (Cabomba caroliniana)",
+          "Brittle Naiad (Najas minor)",
+          "Curly-Leafed Pondweed (Potamogeton crispus)",
+          "Water Chestnut (Trapa natans)",
+          "Sacred Lotus (Nelumbo nucifera)",
+          "Common Reed (Phragmites australis)",
+          "Asian clam (Corbicula fluminea)"
+        ],
+        "treatments": "August 2025 Diver-Assisted Suction Harvesting (DASH) of Fanwort in Round Pond; two LQWA/L&P volunteer Water Chestnut hand-pulling events (June-July); ongoing 3-ft winter drawdown. 2023 herbicide treatment of 31 acres (Eurasian Milfoil, Variable Milfoil, Fanwort) in the northern section confirmed successful by the 2025 survey, with Eurasian Milfoil reduced to two small patches near Ramshorn Island.",
+        "notes": "Management complicated by endangered Vasey's Pondweed (Potamogeton vaseyii) in Round Pond (confirmed by 2024 survey) intermixed with Fanwort. Eurasian Milfoil dense in southern lake and Flint Pond; Water Chestnut dense north of Lincoln Street. Invasive mollusk Corbicula fluminea present since 2018; threat level still being assessed."
+      },
+      "management": "Lake managed by the Lake Quinsigamond Commission (state-level, representing Worcester, Shrewsbury, Grafton) with support from the City of Worcester's Lakes and Ponds Program (L&P). Invasive aquatic plant management plan since 2018: winter drawdown, volunteer Water Chestnut removal, diver removal of fanwort/milfoil, and herbicide treatment. In 2025 L&P installed two ARPA-funded stormwater particle separators and contracted Fanwort DASH removal in Round Pond.",
+      "plans": "In 2026, L&P will continue water quality monitoring, redeploy continuous monitoring buoys, and (budget permitting) repeat industrial-contaminant/PFAS sampling rescheduled from 2025. WCMC cyanobacteria monitoring continues. A 9-Element EPA watershed-based plan for the Lake Quinsigamond watershed (consultant CEI) is in development; draft to be presented at an upcoming public meeting with community feedback integrated. Continued support for volunteer invasive-species removal and educational programming.",
+      "keyFindings": [
+        "Overall State of the Lake rated 'Good' for 2025, an improvement over 2024's 'Good/Fair'.",
+        "Fecal bacteria barely affected recreation: only one closure (Lake Park, 7 days, late May); Regatta Point never closed.",
+        "Strong summer stratification produced 'Poor' bottom dissolved oxygen (0.09-2.35 mg/L) and squeezed cold-water fish habitat to a 5-10 ft band, yielding a 'Fair' DO rating.",
+        "Bottom total phosphorus rose sharply over the season, peaking at 0.673 mg/L at the Southern Site, while surface TP stayed 'Excellent'.",
+        "Cyanobacteria remained below bloom thresholds (phycocyanin never above 50 ug/L); rated 'Good' with no beach closures.",
+        "Invasive plant management continued; 2023 herbicide treatment confirmed successful with Eurasian Milfoil reduced to two small patches near Ramshorn Island."
+      ],
+      "figures": [
+        {
+          "page": 3,
+          "title": "Treatment area for herbicide application on 23-Aug 2023",
+          "type": "map",
+          "parameter": "herbicide treatment area",
+          "site": "Northern Lake Quinsigamond",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 4,
+          "title": "Lake Quinsigamond map and approximate sampling locations",
+          "type": "map",
+          "parameter": "sampling sites",
+          "site": "Lake Quinsigamond watershed",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 4,
+          "title": "Dry conditions / dewatering in Poor Farm Brook (summer-fall 2025)",
+          "type": "photo",
+          "parameter": "drought / streamflow",
+          "site": "Poor Farm Brook",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 5,
+          "title": "Table 1 - Lake Park Beach Enterococcus closure calendar",
+          "type": "bar",
+          "parameter": "fecal bacteria (Enterococcus) beach status",
+          "site": "Lake Park Beach",
+          "unit": "CFU/100mL",
+          "series": [
+            {
+              "date": "late May 2025",
+              "value": 7
+            }
+          ],
+          "ratingBands": "Single-day max 61 CFU/100mL; geomean limit 33. Red = closure, Green = open. Lake Park closed 7 days late May.",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 5,
+          "title": "Table 2 - Regatta Point Beach Enterococcus closure calendar",
+          "type": "bar",
+          "parameter": "fecal bacteria (Enterococcus) beach status",
+          "site": "Regatta Point Beach",
+          "unit": "CFU/100mL",
+          "series": [
+            {
+              "date": "2025 season",
+              "value": 0
+            }
+          ],
+          "ratingBands": "Single-day max 61 CFU/100mL; geomean limit 33. Regatta Point never closed in 2025.",
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 6,
+          "title": "Figure 4 - Secchi Depth at Northern Site",
+          "type": "line",
+          "parameter": "Secchi clarity",
+          "site": "Northern in-lake site (LQ)",
+          "unit": "ft",
+          "series": [
+            {
+              "date": "9-May",
+              "value": 7.5
+            },
+            {
+              "date": "21-May",
+              "value": 11
+            },
+            {
+              "date": "11-Jun",
+              "value": 13
+            },
+            {
+              "date": "2-Jul",
+              "value": 12
+            },
+            {
+              "date": "16-Jul",
+              "value": 9
+            },
+            {
+              "date": "30-Jul",
+              "value": 8
+            },
+            {
+              "date": "14-Aug",
+              "value": 8
+            },
+            {
+              "date": "27-Aug",
+              "value": 11
+            },
+            {
+              "date": "10-Sep",
+              "value": 13
+            },
+            {
+              "date": "24-Sep",
+              "value": 12
+            },
+            {
+              "date": "8-Oct",
+              "value": 13
+            },
+            {
+              "date": "29-Oct",
+              "value": 11
+            }
+          ],
+          "ratingBands": "Excellent >10 ft (approx), Fair 4-10 ft, lower bands below. Most points near 'Fair'-'Good' boundary; range 7.25-14.75 ft across both sites.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 6,
+          "title": "Figure 5 - Secchi Depth at Southern Site",
+          "type": "line",
+          "parameter": "Secchi clarity",
+          "site": "Southern in-lake site (LQ6)",
+          "unit": "ft",
+          "series": [
+            {
+              "date": "9-May",
+              "value": 7.25
+            },
+            {
+              "date": "21-May",
+              "value": 9
+            },
+            {
+              "date": "11-Jun",
+              "value": 11
+            },
+            {
+              "date": "2-Jul",
+              "value": 10
+            },
+            {
+              "date": "16-Jul",
+              "value": 8
+            },
+            {
+              "date": "30-Jul",
+              "value": 8
+            },
+            {
+              "date": "14-Aug",
+              "value": 8
+            },
+            {
+              "date": "27-Aug",
+              "value": 10
+            },
+            {
+              "date": "10-Sep",
+              "value": 12
+            },
+            {
+              "date": "24-Sep",
+              "value": 11
+            },
+            {
+              "date": "8-Oct",
+              "value": 14.75
+            },
+            {
+              "date": "29-Oct",
+              "value": 11
+            }
+          ],
+          "ratingBands": "Fair 4-10 ft. Lowest at both sites on 9-May; 17-Jul-14-Aug consistently 'Fair'.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 6 - Temperature at Northern Site",
+          "type": "line",
+          "parameter": "water temperature",
+          "site": "Northern in-lake site",
+          "unit": "C",
+          "series": [
+            {
+              "date": "9-May",
+              "value": 13.2
+            },
+            {
+              "date": "11-Jun",
+              "value": 20
+            },
+            {
+              "date": "16-Jul",
+              "value": 27
+            },
+            {
+              "date": "30-Jul",
+              "value": 28.5
+            },
+            {
+              "date": "14-Aug",
+              "value": 27
+            },
+            {
+              "date": "10-Sep",
+              "value": 23
+            },
+            {
+              "date": "8-Oct",
+              "value": 18
+            },
+            {
+              "date": "29-Oct",
+              "value": 14
+            }
+          ],
+          "ratingBands": "Surface (red) rises to peak mid-summer then declines; bottom (blue) stable 3.8-5.9 C. Surface range 13.2-28.5 C.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 7,
+          "title": "Figure 7 - Temperature at Southern Site",
+          "type": "line",
+          "parameter": "water temperature",
+          "site": "Southern in-lake site",
+          "unit": "C",
+          "series": [
+            {
+              "date": "9-May",
+              "value": 13.5
+            },
+            {
+              "date": "11-Jun",
+              "value": 21
+            },
+            {
+              "date": "16-Jul",
+              "value": 28.5
+            },
+            {
+              "date": "30-Jul",
+              "value": 27
+            },
+            {
+              "date": "14-Aug",
+              "value": 27
+            },
+            {
+              "date": "10-Sep",
+              "value": 23
+            },
+            {
+              "date": "8-Oct",
+              "value": 18
+            },
+            {
+              "date": "29-Oct",
+              "value": 14
+            }
+          ],
+          "ratingBands": "Surface peak at Southern site on 16-Jul. Bottom stable and low.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 8,
+          "title": "Figure 8 - Temperature at non-CFR inlets and outlet",
+          "type": "line",
+          "parameter": "water temperature",
+          "site": "North Culvert, Billings Brook, Outlet",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "Mostly 'Excellent'; 'Good','Fair','Poor' readings in Jul-Aug. Outlet usually warmest. Range 5.6-28.3 C.",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 8,
+          "title": "Figure 9 - Temperature at CFR tributaries",
+          "type": "line",
+          "parameter": "water temperature",
+          "site": "Coal Mine Brook, Poor Farm Brook",
+          "unit": "C",
+          "series": [],
+          "ratingBands": "Range 5.6-23.4 C; stricter CFR standards yield majority 'Good'/'Fair'. Poor Farm Brook dry 1-Jul and 29-Jul-7-Oct.",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 9,
+          "title": "Figure 10 - Dissolved Oxygen at Northern Site",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Northern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface (red) consistently 'Excellent' 7.70-11.22 mg/L all season; bottom (blue) 'Poor' 0.09-2.35 mg/L.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 9,
+          "title": "Figure 11 - Dissolved Oxygen at Southern Site",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Southern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface 'Excellent', bottom 'Poor' all season. Bands: Excellent (high), Good, Fair, Poor (<4 mg/L).",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 10,
+          "title": "Figure 12 - Dissolved Oxygen at non-CFR inlets and outlet",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Outlet, Billings Brook, North Culvert",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Outlet mostly 'Poor'. North Culvert mostly 'Excellent' (two 'Fair'). Billings Brook 'Excellent' to 'Poor'.",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 10,
+          "title": "Figure 13 - Dissolved Oxygen at CFR inlets",
+          "type": "line",
+          "parameter": "dissolved oxygen",
+          "site": "Coal Mine Brook, Poor Farm Brook",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "'Excellent' and 'Good' in all but one instance. Poor Farm Brook dry on several dates.",
+          "confidence": "low",
+          "galleryWorthy": false
+        },
+        {
+          "page": 11,
+          "title": "Figure 14 - pH at Northern Site",
+          "type": "line",
+          "parameter": "pH",
+          "site": "Northern in-lake site",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Surface 7.17-8.35; bottom lower, 6.62-7.73. Healthy range 6.5-8.5.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 11,
+          "title": "Figure 15 - pH at Southern Site",
+          "type": "line",
+          "parameter": "pH",
+          "site": "Southern in-lake site",
+          "unit": "SU",
+          "series": [],
+          "ratingBands": "Surface generally higher than bottom.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 12,
+          "title": "Figure 16 - Total Phosphorus at Northern Site",
+          "type": "line",
+          "parameter": "total phosphorus",
+          "site": "Northern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface consistently 'Excellent' (<0.025 mg/L); bottom rises over season to max 0.226 mg/L (Northern). TDP lower than TP.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 12,
+          "title": "Figure 17 - Total Phosphorus at Southern Site",
+          "type": "line",
+          "parameter": "total phosphorus",
+          "site": "Southern in-lake site",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Surface 'Excellent'; bottom increases over season to max 0.673 mg/L ('Poor'). TDP up to 0.172 mg/L.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 13,
+          "title": "Figure 18 - Total Phosphorus at Inlets and Outlet",
+          "type": "line",
+          "parameter": "total phosphorus",
+          "site": "Coal Mine Brook, Poor Farm Brook, North Culvert, Billings Brook, Outlet",
+          "unit": "mg/L",
+          "series": [],
+          "ratingBands": "Coal Mine Brook unexpectedly high 0.025-0.162 mg/L (mostly 'Fair'/'Poor'); Billings Brook 0.014-0.114 mg/L; others mostly 'Excellent'/'Good'.",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 14,
+          "title": "Figure 19 - Phycocyanin at Lake Quinsigamond and Flint Pond (WCMC)",
+          "type": "line",
+          "parameter": "phycocyanin",
+          "site": "Regatta Point, Lake Park, Sunset Beach, Point Rok (Flint Pond)",
+          "unit": "ug/L",
+          "series": [],
+          "ratingBands": "Consistently below 50 ug/L bloom-risk threshold. Detected at Lake Park in 8 of 12 sessions.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 14,
+          "title": "Table 3 - Overall cyanobacteria bloom/toxin risk (WCMC)",
+          "type": "bar",
+          "parameter": "cyanobacteria bloom risk",
+          "site": "Lake Quinsigamond and Flint Pond beaches",
+          "unit": "risk category",
+          "series": [],
+          "ratingBands": "Ranged 'Almost None' to 'Elevated'; all but three rated 'Low'. Relative density 'High' twice at Lake Park (18-Aug, 6-Sep) and twice at Flint Pond (21-Jul, 2-Aug).",
+          "confidence": "medium",
+          "galleryWorthy": false
+        },
+        {
+          "page": 15,
+          "title": "Figure 20 - Aquatic plant cover in Lake Quinsigamond (Aug 2025)",
+          "type": "map",
+          "parameter": "aquatic plant cover (native and invasive)",
+          "site": "Lake Quinsigamond",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 15,
+          "title": "Figure 21 - Invasive mollusk Corbicula fluminea",
+          "type": "photo",
+          "parameter": "invasive species",
+          "site": "Lake Quinsigamond",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 17,
+          "title": "Figure 22 - Continuous monitoring buoy",
+          "type": "photo",
+          "parameter": "monitoring buoy",
+          "site": "Lake Ave Sewer Pump Station / Flint Pond",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 18,
+          "title": "Figure 23 - Watershed-based planning sub-watersheds map (CEI)",
+          "type": "map",
+          "parameter": "watershed-based plan sub-watersheds",
+          "site": "City of Worcester recreational sub-watersheds",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 18,
+          "title": "Figure 24 - Particle separator installation in Suntaug Road",
+          "type": "photo",
+          "parameter": "stormwater infrastructure",
+          "site": "Suntaug Road",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": false
+        },
+        {
+          "page": 19,
+          "title": "Figure 25 - Volunteers pulling invasive Water Chestnut",
+          "type": "photo",
+          "parameter": "invasive species removal",
+          "site": "Lake Quinsigamond (north of Route 70)",
+          "unit": null,
+          "series": [],
+          "ratingBands": null,
+          "confidence": "high",
+          "galleryWorthy": true
+        },
+        {
+          "page": 21,
+          "title": "Appendix - Depth Profiles Northern Site (temperature and DO)",
+          "type": "depth-profile",
+          "parameter": "temperature and dissolved oxygen vs depth",
+          "site": "Northern in-lake site",
+          "unit": "C / mg/L",
+          "series": [],
+          "ratingBands": "12 dated profiles (7-May to 29-Oct). May surface-bottom temp diff 12.2 C; greatest 23.4 C on 16-Jul. Oxycline 15-30 ft from 16-Jul onward; thermocline still present 29-Oct.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        },
+        {
+          "page": 22,
+          "title": "Appendix - Depth Profiles Southern Site (temperature and DO)",
+          "type": "depth-profile",
+          "parameter": "temperature and dissolved oxygen vs depth",
+          "site": "Southern in-lake site",
+          "unit": "C / mg/L",
+          "series": [],
+          "ratingBands": "12 dated profiles (7-May to 29-Oct). Pronounced stratification; bottom anoxia developing through season.",
+          "confidence": "medium",
+          "galleryWorthy": true
+        }
+      ],
+      "caveats": [
+        "COPY-PASTE ERROR: The report's Background (page 1) states it 'will also outline projects and opportunities the City of Worcester's Lakes and Ponds Program (L&P) intends to implement at Indian Lake in 2026' - 'Indian Lake' appears to be an erroneous reference; the report is about Lake Quinsigamond. All data reported here are for Lake Quinsigamond.",
+        "Section header inconsistencies: 'Ongoing Projects and Plan for 2025' (page 17) describes 2026 plans; body text repeatedly references 2026 activities.",
+        "Per-site seasonal averages for Secchi clarity and total phosphorus are not stated numerically in the report; only ranges, maxima, and rating bands are given. 'avg' and per-site 'northAvg/southAvg' fields are null rather than guessed.",
+        "Time-series values for line-chart figures (Secchi, temperature, DO, pH, TP, phycocyanin) were approximated from page images (medium/low confidence). Text-stated min/max/peak values are high confidence and should be preferred.",
+        "Bottom in-lake pH: body text (page 11) states 6.62-6.84, but the Figures 14-15 caption states 6.62-7.73. The wider 6.62-7.73 range is used for the metric max; min is 6.62.",
+        "Cyanobacteria peak density is reported as relative-abundance categories ('None' to 'High'), not numeric cells/mL; peakDensity is null.",
+        "No PFAS or industrial-contaminant testing occurred in 2025 (rescheduled to spring 2026); the most recent data are from 2022 with 'no results of concern'. No numeric PFAS values or MCL are stated in the 2025 report; pfas fields reflect this.",
+        "pH, nutrients, invasiveSpecies, tributaries, and litter do not receive an explicit single-word 'State of the Lake' rating in the 2025 report text; those rating fields are null.",
+        "Central Massachusetts experienced fluctuating 2025 drought (Level 2-3 early, Normal in summer, Level 2 in Sep-Oct), reducing tributary flow; Poor Farm Brook was dry on multiple sampling occasions, limiting tributary data."
+      ]
+    }
+  }
+}
