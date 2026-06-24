@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lake Quinsigamond Conditions</title>
+    <link rel="preload" as="image" href="assets/lake-quinsigamond-regatta-point.jpg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Lake Quinsigamond Conditions home">
+        <span class="brand-mark"></span>
+        <span>Quinsigamond Conditions</span>
+      </a>
+      <div class="feed-status" id="feedStatus">Loading live feeds</div>
+    </header>
+
+    <main id="top">
+      <section class="today-shell" aria-labelledby="todayTitle">
+        <div class="today-photo" aria-hidden="true"></div>
+        <div class="today-content">
+          <div class="today-copy">
+            <p class="kicker">Lake Quinsigamond</p>
+            <h1 id="todayTitle">Today on the lake</h1>
+            <p id="todaySummary">Pulling current weather, river stage, and historical context.</p>
+          </div>
+
+          <div class="metric-grid" aria-label="Today's water and weather conditions">
+            <article class="metric-card metric-card-water">
+              <span class="metric-label">Outlet height</span>
+              <strong id="gageValue">--</strong>
+              <small id="gageMeta">USGS live station</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Flow</span>
+              <strong id="flowValue">--</strong>
+              <small id="flowMeta">Quinsigamond River outlet</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Air</span>
+              <strong id="airValue">--</strong>
+              <small id="airMeta">Open-Meteo</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Wind</span>
+              <strong id="windValue">--</strong>
+              <small id="windMeta">Lake surface proxy</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Humidity</span>
+              <strong id="humidityValue">--</strong>
+              <small id="cloudMeta">Cloud cover --</small>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Sun</span>
+              <strong id="sunValue">--</strong>
+              <small id="sunMeta">Sunrise / sunset</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="temperature-band" aria-labelledby="temperatureTitle">
+        <div class="sun-scene" aria-hidden="true">
+          <div class="sun-disc"></div>
+          <div class="heat-ribbon heat-ribbon-one"></div>
+          <div class="heat-ribbon heat-ribbon-two"></div>
+          <div class="water-line water-line-one"></div>
+          <div class="water-line water-line-two"></div>
+        </div>
+        <div class="temperature-copy">
+          <p class="kicker">Temperature</p>
+          <h2 id="temperatureTitle">City buoy temperature feed pending access</h2>
+          <p id="temperatureDetail">Worcester reports in-lake buoys that measure temperature, turbidity, chlorophyll, and phycocyanin every 30 minutes. This hub is ready to connect when a public dashboard, project ID, or API key is available.</p>
+        </div>
+        <div class="temperature-readout">
+          <span>Air now</span>
+          <strong id="tempReadout">--</strong>
+          <small id="waterTempReadout">Water sample --</small>
+        </div>
+      </section>
+
+      <section class="upgrade-band" aria-label="High value lake data feeds to add">
+        <article class="upgrade-card">
+          <span>Priority source</span>
+          <h2>Worcester in-lake buoys</h2>
+          <p>Best source for live water temperature, clarity, chlorophyll, and cyanobacteria indicators. Public API/dashboard access still needs to be requested.</p>
+        </article>
+        <article class="upgrade-card">
+          <span>Swim safety</span>
+          <h2>DCR beach testing</h2>
+          <p>Regatta Point and Lake Park are tested for Enterococcus during swim season. Add this as the resident-facing beach-open / beach-closed card.</p>
+        </article>
+        <article class="upgrade-card">
+          <span>Bloom risk</span>
+          <h2>WCMC samples</h2>
+          <p>Volunteer phycocyanin and cyanobacteria-density sampling can become the alert layer for fall scum and bloom reports.</p>
+        </article>
+      </section>
+
+      <section class="analytics-grid" aria-label="Lake condition analytics">
+        <article class="panel panel-wide">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Live trend</p>
+              <h2>Last 30 days</h2>
+            </div>
+            <div class="chart-stat" id="recentStat">--</div>
+          </div>
+          <canvas id="recentChart" class="chart" aria-label="Recent water level, flow, and rain chart"></canvas>
+          <div class="legend" id="recentLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Seasonal context</p>
+              <h2>This year vs history</h2>
+            </div>
+            <div class="chart-stat" id="yearStat">--</div>
+          </div>
+          <canvas id="yearChart" class="chart" aria-label="This year flow compared with historical range"></canvas>
+          <div class="legend" id="yearLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Storm response</p>
+              <h2>Rain and river rise</h2>
+            </div>
+            <div class="chart-stat" id="responseStat">--</div>
+          </div>
+          <canvas id="responseChart" class="chart" aria-label="Rainfall and next day river response scatter chart"></canvas>
+          <div class="legend" id="responseLegend"></div>
+        </article>
+      </section>
+
+      <section class="split-band" aria-label="Historical insights and water quality">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Signals</p>
+              <h2>Outliers</h2>
+            </div>
+          </div>
+          <div class="insight-list" id="insights"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Samples</p>
+              <h2>Water quality</h2>
+            </div>
+            <div class="chart-stat" id="qualityStat">--</div>
+          </div>
+          <div class="sample-list" id="sampleList"></div>
+        </article>
+      </section>
+
+      <section class="analytics-grid bottom-grid" aria-label="Water quality and future sensors">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Water samples</p>
+              <h2>Temperature history</h2>
+            </div>
+            <div class="chart-stat" id="waterTempStat">--</div>
+          </div>
+          <canvas id="waterTempChart" class="chart" aria-label="Historical water temperature samples"></canvas>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Next sensors</p>
+              <h2>Local station slots</h2>
+            </div>
+          </div>
+          <div class="sensor-grid" id="sensorGrid">
+            <div><span>Worcester buoys</span><strong>API pending</strong><small>Live in-lake temp, turbidity, chlorophyll, phycocyanin</small></div>
+            <div><span>DCR beaches</span><strong>Find feed</strong><small>Regatta Point and Lake Park closure status</small></div>
+            <div><span>Camera</span><strong>Ready</strong><small>Live shoreline view</small></div>
+            <div><span>Private monitor</span><strong>Ready</strong><small>Surface temp, clarity, DO, pH, conductivity</small></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="source-band" aria-label="Data sources">
+        <div>
+          <p class="kicker">Data</p>
+          <h2>Sources wired into this hub</h2>
+        </div>
+        <div class="source-links" id="sourceLinks"></div>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
