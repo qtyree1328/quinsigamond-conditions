@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annual Water Quality Reports — Lake Quinsigamond</title>
+    <meta name="description" content="Cross-year digest of the City of Worcester annual Lake Quinsigamond Water Quality Reports, 2022–2025: ratings, trends, key findings, and report figures.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="reports-body">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Lake Quinsigamond Conditions home">
+        <span class="brand-mark"></span>
+        <span>Quinsigamond Conditions</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html">Live conditions</a>
+        <a href="reports.html" aria-current="page" class="is-active">Annual reports</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="report-hero" aria-labelledby="reportTitle">
+        <div class="report-hero-copy">
+          <p class="kicker">Annual reports digest</p>
+          <h1 id="reportTitle">Four years of Lake Quinsigamond water quality</h1>
+          <p id="reportIntro">A cross-year reading of the City of Worcester Lakes &amp; Ponds Program annual water quality reports, 2022–2025 — the State of the Lake ratings, the numbers behind them, and the figures from each report.</p>
+          <div class="state-chips" id="stateChips" aria-label="Overall State of the Lake rating by year"></div>
+        </div>
+      </section>
+
+      <section class="panel panel-wide scorecard-panel" aria-labelledby="scorecardTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="kicker">Scorecard</p>
+            <h2 id="scorecardTitle">State of the Lake by parameter</h2>
+          </div>
+          <div class="chart-stat">Worcester L&amp;P ratings: Excellent · Good · Fair · Poor</div>
+        </div>
+        <div class="scorecard" id="scorecard"></div>
+        <div class="rating-key" id="ratingKey" aria-hidden="true"></div>
+      </section>
+
+      <section class="analytics-grid reports-trends" aria-label="Cross-year trends">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Swim safety</p>
+              <h2>Beach closure days</h2>
+            </div>
+            <div class="chart-stat" id="beachStat">--</div>
+          </div>
+          <canvas id="beachChart" class="chart" aria-label="Beach closure days by year for Regatta Point and Lake Park"></canvas>
+          <div class="legend" id="beachLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Nutrients</p>
+              <h2>Deep-water phosphorus peak</h2>
+            </div>
+            <div class="chart-stat" id="tpStat">--</div>
+          </div>
+          <canvas id="tpChart" class="chart" aria-label="Peak bottom total phosphorus at the southern site by year"></canvas>
+          <div class="legend" id="tpLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Clarity</p>
+              <h2>Water clarity range</h2>
+            </div>
+            <div class="chart-stat" id="secchiStat">--</div>
+          </div>
+          <canvas id="secchiChart" class="chart" aria-label="Secchi water clarity depth range by year"></canvas>
+          <div class="legend" id="secchiLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">Temperature</p>
+              <h2>Peak surface temperature</h2>
+            </div>
+            <div class="chart-stat" id="tempStat">--</div>
+          </div>
+          <canvas id="tempChart" class="chart" aria-label="Maximum surface water temperature by year"></canvas>
+          <div class="legend" id="tempLegend"></div>
+        </article>
+      </section>
+
+      <section aria-labelledby="yearsTitle">
+        <div class="section-head">
+          <p class="kicker">Year by year</p>
+          <h2 id="yearsTitle">What each report found</h2>
+        </div>
+        <div class="year-cards" id="yearCards"></div>
+      </section>
+
+      <section aria-labelledby="galleryTitle">
+        <div class="section-head">
+          <p class="kicker">From the reports</p>
+          <h2 id="galleryTitle">Report figures</h2>
+          <p class="section-sub">Excerpts from the published reports. Click any figure to enlarge.</p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section class="panel panel-wide method-panel" aria-labelledby="methodTitle">
+        <div class="panel-heading">
+          <div>
+            <p class="kicker">Method &amp; caveats</p>
+            <h2 id="methodTitle">How this digest was built</h2>
+          </div>
+        </div>
+        <div class="method-body" id="methodBody"></div>
+      </section>
+
+      <section class="source-band" aria-label="Report sources">
+        <div>
+          <p class="kicker">Source</p>
+          <h2>Published reports</h2>
+        </div>
+        <div class="source-links" id="reportLinks"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImg" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="reports.js" defer></script>
+  </body>
+</html>

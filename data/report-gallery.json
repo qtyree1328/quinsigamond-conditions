@@ -1,0 +1,62 @@
+[
+  {
+    "file": "assets/reports/2022-p07-temperature-north-south.png",
+    "year": 2022,
+    "page": 7,
+    "caption": "Water temperature, surface vs. bottom \u2014 Northern & Southern sites. Surface peaks ~28 \u00b0C in August; the bottom stays near 6 \u00b0C, showing strong summer stratification."
+  },
+  {
+    "file": "assets/reports/2022-p11-total-phosphorus.png",
+    "year": 2022,
+    "page": 11,
+    "caption": "Total phosphorus \u2014 surface stays low (\u201cExcellent\u201d) while bottom phosphorus climbs late-season, peaking 0.408 mg/L at the Southern site."
+  },
+  {
+    "file": "assets/reports/2022-p20-construction-sediment.png",
+    "year": 2022,
+    "page": 20,
+    "caption": "Sediment plumes from the Route 9 stormwater outfall during Belmont Street construction \u2014 total phosphorus reached 4.66 mg/L at the outfall."
+  },
+  {
+    "file": "assets/reports/2023-p09-dissolved-oxygen.png",
+    "year": 2023,
+    "page": 9,
+    "caption": "Dissolved oxygen \u2014 surface \u201cExcellent\u201d all season, bottom water hypoxic (below 4 mg/L) after late May."
+  },
+  {
+    "file": "assets/reports/2023-p14-invasive-plant-map.png",
+    "year": 2023,
+    "page": 14,
+    "caption": "Mapped invasive aquatic-plant cover. Eurasian Milfoil and Fanwort are densest in the southern lake and Flint Pond."
+  },
+  {
+    "file": "assets/reports/2024-p22-regatta-bacteria.png",
+    "year": 2024,
+    "page": 22,
+    "caption": "Regatta Point Beach Enterococcus results. Single-sample bars against the 61 CFU/100 mL threshold; peak ~228 on Aug 13."
+  },
+  {
+    "file": "assets/reports/2024-p25-depth-profiles.png",
+    "year": 2024,
+    "page": 25,
+    "caption": "Depth profiles of temperature and dissolved oxygen \u2014 the oxycline shoals to 25\u201330 ft by late July, compressing cold-water fish habitat."
+  },
+  {
+    "file": "assets/reports/2025-p06-secchi-clarity.png",
+    "year": 2025,
+    "page": 6,
+    "caption": "Secchi-depth water clarity, Northern & Southern sites \u2014 7.25\u201314.75 ft across the season, most readings in the \u201cFair\u201d band."
+  },
+  {
+    "file": "assets/reports/2025-p12-total-phosphorus-2025.png",
+    "year": 2025,
+    "page": 12,
+    "caption": "Total phosphorus 2025 \u2014 bottom phosphorus rose sharply to a record 0.673 mg/L at the Southern site."
+  },
+  {
+    "file": "assets/reports/2025-p15-plant-cover-2025.png",
+    "year": 2025,
+    "page": 15,
+    "caption": "August 2025 aquatic-plant cover survey, confirming the 2023 herbicide treatment success (Eurasian Milfoil reduced to two small patches)."
+  }
+]
