@@ -32,14 +32,14 @@
 
           <div class="metric-grid" aria-label="Today's water and weather conditions">
             <article class="metric-card metric-card-water">
-              <span class="metric-label">Outlet height</span>
+              <span class="metric-label">River level</span>
               <strong id="gageValue">--</strong>
-              <small id="gageMeta">USGS live station</small>
+              <small id="gageMeta">Downstream gauge, not lake level</small>
             </article>
             <article class="metric-card">
-              <span class="metric-label">Flow</span>
+              <span class="metric-label">River flow</span>
               <strong id="flowValue">--</strong>
-              <small id="flowMeta">Quinsigamond River outlet</small>
+              <small id="flowMeta">Leaving the lake downstream</small>
             </article>
             <article class="metric-card">
               <span class="metric-label">Air</span>
@@ -75,8 +75,8 @@
         </div>
         <div class="temperature-copy">
           <p class="kicker">Temperature</p>
-          <h2 id="temperatureTitle">City buoy temperature feed pending access</h2>
-          <p id="temperatureDetail">Worcester reports in-lake buoys that measure temperature, turbidity, chlorophyll, and phycocyanin every 30 minutes. This hub is ready to connect when a public dashboard, project ID, or API key is available.</p>
+          <h2 id="temperatureTitle">How warm is the water?</h2>
+          <p id="temperatureDetail">We show live air temperature plus the most recent in-water sample. Worcester's in-lake buoys read water temperature every 30 minutes, but that live feed isn't public yet.</p>
         </div>
         <div class="temperature-readout">
           <span>Air now</span>
@@ -85,22 +85,15 @@
         </div>
       </section>
 
-      <section class="upgrade-band" aria-label="High value lake data feeds to add">
-        <article class="upgrade-card">
-          <span>Priority source</span>
-          <h2>Worcester in-lake buoys</h2>
-          <p>Best source for live water temperature, clarity, chlorophyll, and cyanobacteria indicators. Public API/dashboard access still needs to be requested.</p>
-        </article>
-        <article class="upgrade-card">
-          <span>Swim safety</span>
-          <h2>DCR beach testing</h2>
-          <p>Regatta Point and Lake Park are tested for Enterococcus during swim season. Add this as the resident-facing beach-open / beach-closed card.</p>
-        </article>
-        <article class="upgrade-card">
-          <span>Bloom risk</span>
-          <h2>WCMC samples</h2>
-          <p>Volunteer phycocyanin and cyanobacteria-density sampling can become the alert layer for fall scum and bloom reports.</p>
-        </article>
+      <section class="lake-status" aria-labelledby="lakeStatusTitle">
+        <div class="section-head">
+          <p class="kicker">Is the lake OK?</p>
+          <h2 id="lakeStatusTitle">Latest read on swimming, clarity &amp; algae</h2>
+          <p class="section-sub" id="lakeStatusSub">From the City of Worcester's most recent annual State of the Lake report. <a href="reports.html">See all four years &rarr;</a></p>
+        </div>
+        <div class="status-cards" id="statusCards">
+          <p class="status-loading">Loading the latest report summary&hellip;</p>
+        </div>
       </section>
 
       <section class="analytics-grid" aria-label="Lake condition analytics">
@@ -108,36 +101,42 @@
           <div class="panel-heading">
             <div>
               <p class="kicker">Live trend</p>
-              <h2>Last 30 days</h2>
+              <h2>Last 30 days: rain &amp; river flow</h2>
+              <p class="panel-sub">Daily rainfall and the flow of the river leaving the lake (USGS gauge just downstream). Flow rises for a day or two after rain &mdash; that's normal runoff, not a lake problem.</p>
             </div>
             <div class="chart-stat" id="recentStat">--</div>
           </div>
-          <canvas id="recentChart" class="chart" aria-label="Recent water level, flow, and rain chart"></canvas>
+          <canvas id="recentChart" class="chart" aria-label="Recent river flow and rain chart"></canvas>
           <div class="legend" id="recentLegend"></div>
+          <p class="chart-note" id="recentNote"></p>
         </article>
 
         <article class="panel">
           <div class="panel-heading">
             <div>
               <p class="kicker">Seasonal context</p>
-              <h2>This year vs history</h2>
+              <h2>This year vs. a normal year</h2>
+              <p class="panel-sub">This year's outlet-river flow against the typical range for the same date in past years. Inside the shaded band is normal.</p>
             </div>
             <div class="chart-stat" id="yearStat">--</div>
           </div>
           <canvas id="yearChart" class="chart" aria-label="This year flow compared with historical range"></canvas>
           <div class="legend" id="yearLegend"></div>
+          <p class="chart-note" id="yearNote"></p>
         </article>
 
         <article class="panel">
           <div class="panel-heading">
             <div>
               <p class="kicker">Storm response</p>
-              <h2>Rain and river rise</h2>
+              <h2>How rain moves the river</h2>
+              <p class="panel-sub">Each dot is a rainy day: how much it rained (across) vs. how much the outlet river rose the next day (up). More rain generally means a bigger rise.</p>
             </div>
             <div class="chart-stat" id="responseStat">--</div>
           </div>
           <canvas id="responseChart" class="chart" aria-label="Rainfall and next day river response scatter chart"></canvas>
           <div class="legend" id="responseLegend"></div>
+          <p class="chart-note" id="responseNote"></p>
         </article>
       </section>
 
@@ -145,8 +144,9 @@
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <p class="kicker">Signals</p>
-              <h2>Outliers</h2>
+              <p class="kicker">Record highs &amp; lows</p>
+              <h2>River flow extremes</h2>
+              <p class="panel-sub">The biggest and smallest days in the cached downstream river-flow and rainfall record.</p>
             </div>
           </div>
           <div class="insight-list" id="insights"></div>
@@ -155,8 +155,9 @@
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <p class="kicker">Samples</p>
-              <h2>Water quality</h2>
+              <p class="kicker">Water quality samples</p>
+              <h2>What's in the water</h2>
+              <p class="panel-sub">Lab samples from state and city monitoring &mdash; periodic check-ups, not live readings. Each shows its sample date; the colored tag flags whether the value sits in a healthy range. Tap a row for what it means.</p>
             </div>
             <div class="chart-stat" id="qualityStat">--</div>
           </div>
@@ -164,30 +165,57 @@
         </article>
       </section>
 
-      <section class="analytics-grid bottom-grid" aria-label="Water quality and future sensors">
+      <section class="analytics-grid bottom-grid" aria-label="Water temperature history and data freshness">
         <article class="panel">
           <div class="panel-heading">
             <div>
               <p class="kicker">Water samples</p>
-              <h2>Temperature history</h2>
+              <h2>Water temperature over the years</h2>
+              <p class="panel-sub">Every public water-temperature sample on record (&deg;F), by year. Warm summer surface readings peak near 80&deg;F; winter samples sit near freezing.</p>
             </div>
             <div class="chart-stat" id="waterTempStat">--</div>
           </div>
           <canvas id="waterTempChart" class="chart" aria-label="Historical water temperature samples"></canvas>
+          <p class="chart-note" id="waterTempNote"></p>
         </article>
 
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <p class="kicker">Next sensors</p>
-              <h2>Local station slots</h2>
+              <p class="kicker">How current is this?</p>
+              <h2>Where each number comes from</h2>
+              <p class="panel-sub">This hub blends three very different update speeds. Knowing which is which keeps the readings in context.</p>
             </div>
           </div>
-          <div class="sensor-grid" id="sensorGrid">
-            <div><span>Worcester buoys</span><strong>API pending</strong><small>Live in-lake temp, turbidity, chlorophyll, phycocyanin</small></div>
-            <div><span>DCR beaches</span><strong>Find feed</strong><small>Regatta Point and Lake Park closure status</small></div>
-            <div><span>Camera</span><strong>Ready</strong><small>Live shoreline view</small></div>
-            <div><span>Private monitor</span><strong>Ready</strong><small>Surface temp, clarity, DO, pH, conductivity</small></div>
+          <div class="freshness" id="freshness">
+            <div class="freshness-row freshness-live">
+              <span class="freshness-badge">Live</span>
+              <div>
+                <strong>Weather &amp; outlet river flow</strong>
+                <small>Air, wind, sun from Open-Meteo and river discharge from the USGS gauge &mdash; updated through the day.</small>
+              </div>
+            </div>
+            <div class="freshness-row freshness-periodic">
+              <span class="freshness-badge">Periodic</span>
+              <div>
+                <strong>In-water lab samples</strong>
+                <small>Clarity, oxygen, phosphorus, pH and more &mdash; collected by hand on monitoring trips, sometimes months or years apart. Each sample shows its date.</small>
+              </div>
+            </div>
+            <div class="freshness-row freshness-annual">
+              <span class="freshness-badge">Yearly</span>
+              <div>
+                <strong>State of the Lake reports</strong>
+                <small>The City's full season summary and ratings, once a year. <a href="reports.html">Read the 2022&ndash;2025 digest &rarr;</a></small>
+              </div>
+            </div>
+            <div class="freshness-row freshness-pending">
+              <span class="freshness-badge">Not yet public</span>
+              <div>
+                <strong>In-lake buoys</strong>
+                <small>Worcester's buoys measure temperature, clarity and algae every 30 minutes, but the live feed isn't publicly available yet.</small>
+              </div>
+            </div>
           </div>
         </article>
       </section>

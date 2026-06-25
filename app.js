@@ -1,4 +1,6 @@
 const HISTORY_URL = "data/hub_history.json";
+const EXPLAINERS_URL = "data/explainers.json";
+const REPORTS_URL = "data/reports.json";
 const USGS_IV_URL =
   "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01110000&parameterCd=00065,00060&period=P30D";
 const WEATHER_URL =
@@ -9,6 +11,8 @@ const state = {
   history: null,
   live: null,
   weather: null,
+  explainers: null,
+  reports: null,
 };
 
 const els = {
@@ -42,6 +46,11 @@ const els = {
   recentLegend: byId("recentLegend"),
   yearLegend: byId("yearLegend"),
   responseLegend: byId("responseLegend"),
+  statusCards: byId("statusCards"),
+  recentNote: byId("recentNote"),
+  yearNote: byId("yearNote"),
+  responseNote: byId("responseNote"),
+  waterTempNote: byId("waterTempNote"),
 };
 
 const charts = {
@@ -57,6 +66,12 @@ window.addEventListener("resize", debounce(drawCharts, 120));
 async function init() {
   try {
     state.history = await fetchJson(HISTORY_URL);
+    const [explainers, reports] = await Promise.allSettled([
+      fetchJson(EXPLAINERS_URL),
+      fetchJson(REPORTS_URL),
+    ]);
+    if (explainers.status === "fulfilled") state.explainers = explainers.value;
+    if (reports.status === "fulfilled") state.reports = reports.value;
     renderStatic();
     drawCharts();
   } catch (error) {
@@ -117,6 +132,7 @@ function parseUsgsInstant(data) {
 }
 
 function renderStatic() {
+  renderStatus();
   renderSources();
   renderSamples();
   renderInsights();
@@ -169,7 +185,7 @@ function renderLive() {
   if (gage) {
     const delta = deltaFromSeries(state.live["00065"], 24);
     setText(els.gageValue, `${fmt(gage.value, 2)} ft`);
-    setText(els.gageMeta, `${deltaText(delta, "ft")} | USGS outlet ${timeOnly(gage.datetime)}`);
+    setText(els.gageMeta, `${deltaText(delta, "ft")} · downstream gauge`);
   } else {
     setText(els.gageValue, "--");
     setText(els.gageMeta, "Live gage unavailable");
@@ -178,7 +194,7 @@ function renderLive() {
   if (flow) {
     const delta = deltaFromSeries(state.live["00060"], 24);
     setText(els.flowValue, `${fmt(flow.value, 1)} cfs`);
-    setText(els.flowMeta, `${deltaText(delta, "cfs")} | ${timeOnly(flow.datetime)}`);
+    setText(els.flowMeta, `${deltaText(delta, "cfs")} · river leaving lake`);
   } else {
     const fallback = latestDailyFlow();
     setText(els.flowValue, fallback ? `${fmt(fallback.flowCfs, 1)} cfs` : "--");
@@ -195,7 +211,7 @@ function renderLive() {
     setText(els.tempReadout, `${fmt(weather.temperature_2m, 0)}${DEG}F`);
     setText(
       els.temperatureDetail,
-      `Air feels ${fmt(weather.apparent_temperature, 0)}${DEG}F with ${fmt(weather.cloud_cover, 0)}% cloud cover. Worcester's in-lake buoy feed is the right future source for live water temperature.`,
+      `Air feels ${fmt(weather.apparent_temperature, 0)}${DEG}F with ${fmt(weather.cloud_cover, 0)}% cloud cover. Live lake-water temperature isn't public yet — the reading below is the most recent hand-collected sample.`,
     );
   }
 
@@ -223,6 +239,187 @@ function renderLive() {
   );
 
   drawCharts();
+}
+
+const RATING_TONE = {
+  excellent: { tone: "good", label: "Excellent" },
+  good: { tone: "good", label: "Good" },
+  "good/fair": { tone: "ok", label: "Good / Fair" },
+  fair: { tone: "watch", label: "Fair" },
+  poor: { tone: "poor", label: "Poor" },
+};
+
+function ratingTone(rating) {
+  if (!rating) return { tone: "na", label: "Not rated" };
+  return RATING_TONE[rating.trim().toLowerCase()] || { tone: "na", label: rating };
+}
+
+function renderStatus() {
+  const host = els.statusCards;
+  if (!host) return;
+  const reports = state.reports;
+  if (!reports?.years) {
+    host.innerHTML = '<p class="status-loading">Latest annual report summary is unavailable right now.</p>';
+    return;
+  }
+  const years = reports.meta.years;
+  const year = years[years.length - 1];
+  const d = reports.years[String(year)];
+  const rp = d.beaches.regattaPoint;
+  const lp = d.beaches.lakePark;
+  const totalClosed = (rp.daysClosed ?? 0) + (lp.daysClosed ?? 0);
+  const secchi = d.metrics.secchiClarityFt;
+
+  const cards = [
+    {
+      kicker: "Can you swim?",
+      title: "Beach bacteria",
+      rating: d.ratings.fecalBacteria,
+      verdict:
+        totalClosed === 0
+          ? "Both beaches stayed open all season."
+          : `Beaches were posted closed for ${totalClosed} day${totalClosed === 1 ? "" : "s"} total.`,
+      sub: `Regatta Point ${fmtClosedDays(rp.daysClosed)} · Lake Park ${fmtClosedDays(lp.daysClosed)} closed.`,
+    },
+    {
+      kicker: "How clear?",
+      title: "Water clarity",
+      rating: d.ratings.waterClarity,
+      verdict: clarityVerdict(d.ratings.waterClarity),
+      sub: secchi.min != null ? `You could see ${secchi.min}–${secchi.max} ft down.` : "",
+    },
+    {
+      kicker: "Algae blooms?",
+      title: "Cyanobacteria",
+      rating: d.ratings.cyanobacteria,
+      verdict: "Stayed below bloom-warning levels through swim season.",
+      sub: "Blue-green algae can release toxins when it blooms.",
+    },
+    {
+      kicker: "Healthy for fish?",
+      title: "Deep-water oxygen",
+      rating: d.ratings.dissolvedOxygen,
+      verdict: "Surface is fine; deep water runs low on oxygen each summer.",
+      sub: "A natural seasonal pattern here — no fish kills reported.",
+    },
+  ];
+
+  host.replaceChildren();
+  for (const c of cards) {
+    const t = ratingTone(c.rating);
+    const el = document.createElement("article");
+    el.className = "status-card";
+    el.innerHTML = `
+      <span class="status-kicker">${c.kicker}</span>
+      <span class="status-rating tone-${t.tone}">${t.label}</span>
+      <strong>${escapeHtml(c.title)}</strong>
+      <p>${escapeHtml(c.verdict)}</p>
+      ${c.sub ? `<small>${escapeHtml(c.sub)}</small>` : ""}`;
+    host.append(el);
+  }
+
+  const sub = byId("lakeStatusSub");
+  if (sub) {
+    sub.innerHTML = `From the City of Worcester's <b>${year}</b> State of the Lake report — overall rating <b>${escapeHtml(d.overallState)}</b>. <a href="reports.html">See all four years &rarr;</a>`;
+  }
+}
+
+function fmtClosedDays(n) {
+  if (n == null) return "—";
+  if (n === 0) return "0 days";
+  return `${n} day${n === 1 ? "" : "s"}`;
+}
+
+function clarityVerdict(rating) {
+  const t = (rating || "").toLowerCase();
+  if (t.includes("excellent")) return "Very clear water this year.";
+  if (t.includes("good")) return "Fairly clear for a busy urban lake.";
+  if (t.includes("fair")) return "Cloudier than ideal — common in mid-summer.";
+  if (t.includes("poor")) return "Murky this year; see the report for why.";
+  return "See the annual report for detail.";
+}
+
+// Maps a water-quality sample to a plain status tag using the thresholds in
+// data/explainers.json (kept numeric here so the badge stays fast and offline).
+const EXPLAINER_KEY = {
+  "Temperature, water": "waterTemperature",
+  "Depth, Secchi disk depth": "waterClarity",
+  Turbidity: "turbidity",
+  "Chlorophyll a": "chlorophyllA",
+  Phycocyanin: "cyanobacteria",
+  "Dissolved oxygen (DO)": "dissolvedOxygen",
+  "Dissolved oxygen saturation": "dissolvedOxygen",
+  "Total Phosphorus, mixed forms": "totalPhosphorus",
+  Orthophosphate: "totalPhosphorus",
+  Nitrate: "nitrate",
+  "Specific conductance": "specificConductance",
+  Conductivity: "specificConductance",
+  pH: "pH",
+};
+
+function tone(t, label) {
+  return { tone: t, label };
+}
+
+function sampleStatus(key, sample) {
+  const v = sample.value;
+  if (v == null) return null;
+  switch (key) {
+    case "Temperature, water": {
+      const f = sample.valueF ?? (sample.unit === "deg C" ? v * 9 / 5 + 32 : v);
+      if (f > 86) return tone("watch", "Very warm");
+      if (f >= 70) return tone("good", "Comfortable");
+      if (f >= 64) return tone("ok", "Cool");
+      return tone("ok", "Cold");
+    }
+    case "Depth, Secchi disk depth": {
+      const ft = sample.valueFt ?? (sample.unit === "m" ? v * 3.28084 : v);
+      if (ft >= 13) return tone("good", "Clear");
+      if (ft >= 10) return tone("good", "Good");
+      if (ft >= 4) return tone("ok", "Fair");
+      return tone("watch", "Murky");
+    }
+    case "Dissolved oxygen (DO)":
+      if (v >= 6) return tone("good", "Healthy");
+      if (v >= 5) return tone("ok", "Adequate");
+      if (v >= 4) return tone("watch", "Low");
+      return tone("poor", "Hypoxic");
+    case "Dissolved oxygen saturation":
+      if (v >= 80 && v <= 120) return tone("good", "Healthy");
+      if (v >= 60) return tone("ok", "Off target");
+      return tone("watch", "Low");
+    case "pH":
+      if (v >= 6.5 && v <= 8.5) return tone("good", "Healthy");
+      return tone("watch", v < 6.5 ? "Acidic" : "Basic");
+    case "Total Phosphorus, mixed forms":
+    case "Orthophosphate":
+      if (v < 0.025) return tone("good", "Low");
+      if (v < 0.05) return tone("ok", "Moderate");
+      if (v < 0.1) return tone("watch", "Elevated");
+      return tone("poor", "High");
+    case "Phycocyanin":
+      if (v < 50) return tone("good", "No bloom");
+      return tone("watch", "Bloom watch");
+    case "Turbidity":
+      if (v < 5) return tone("good", "Clear");
+      if (v < 10) return tone("ok", "Slightly cloudy");
+      return tone("watch", "Cloudy");
+    case "Chlorophyll a":
+      if (v < 7) return tone("good", "Low algae");
+      if (v < 40) return tone("ok", "Moderate");
+      return tone("watch", "High");
+    case "Specific conductance":
+    case "Conductivity":
+      if (v < 250) return tone("good", "Low");
+      if (v < 800) return tone("ok", "Elevated");
+      return tone("watch", "High");
+    case "Nitrate":
+      if (v < 1) return tone("good", "Low");
+      if (v < 10) return tone("ok", "Elevated");
+      return tone("watch", "High");
+    default:
+      return null;
+  }
 }
 
 function renderSources() {
@@ -261,19 +458,34 @@ function renderSamples() {
     if (key === "Conductivity" && latest["Specific conductance"]) continue;
     const sample = latest[key];
     if (!sample) continue;
-    const row = document.createElement("div");
+
+    const status = sampleStatus(key, sample);
+    const explainer = state.explainers?.[EXPLAINER_KEY[key]];
+
+    const row = document.createElement("details");
     row.className = "sample-row";
 
-    const label = document.createElement("div");
-    const labelTop = document.createElement("span");
-    labelTop.textContent = readableCharacteristic(key);
-    const small = document.createElement("small");
-    small.textContent = `${formatDate(sample.date)} | ${sample.station}`;
-    label.append(labelTop, small);
+    const summary = document.createElement("summary");
+    summary.className = "sample-summary";
+    summary.innerHTML = `
+      <div class="sample-id">
+        <span class="sample-name">${escapeHtml(readableCharacteristic(key))}</span>
+        <small>${formatDate(sample.date)} &middot; ${escapeHtml(sample.station)}</small>
+      </div>
+      <div class="sample-readout">
+        <strong>${escapeHtml(formatSample(sample))}</strong>
+        ${status ? `<span class="status-pill tone-${status.tone}">${escapeHtml(status.label)}</span>` : ""}
+      </div>`;
+    row.append(summary);
 
-    const value = document.createElement("strong");
-    value.textContent = formatSample(sample);
-    row.append(label, value);
+    if (explainer) {
+      const detail = document.createElement("div");
+      detail.className = "sample-detail";
+      detail.innerHTML = `
+        <p>${escapeHtml(explainer.plain)} ${escapeHtml(explainer.why)}</p>
+        <p class="sample-normal"><b>Normal range:</b> ${escapeHtml(explainer.normal)}</p>`;
+      row.append(detail);
+    }
     els.sampleList.append(row);
   }
 
@@ -281,7 +493,7 @@ function renderSamples() {
     .map((sample) => sample.date)
     .sort()
     .at(-1);
-  setText(els.qualityStat, latestDate ? `Latest ${formatDate(latestDate)}` : "--");
+  setText(els.qualityStat, latestDate ? `Most recent sample ${formatDate(latestDate)}` : "--");
 }
 
 function renderInsights() {
@@ -324,9 +536,9 @@ function renderInsights() {
       text: `${formatDate(fastestRise.date)} had the sharpest one-day flow jump in the cached record.`,
     },
     {
-      value: `${fmt(rank, 0)}th`,
-      label: "Year rank",
-      text: `${currentYear} average flow is at this percentile among prior full-year averages so far.`,
+      value: `${fmt(rank, 0)}%`,
+      label: "This year so far",
+      text: `${currentYear}'s average outlet flow is running ${rank >= 50 ? "wetter" : "drier"} than about ${fmt(rank, 0)}% of past years.`,
     },
   ];
 
@@ -438,6 +650,16 @@ function drawRecentChart() {
     const fallback = latestDailyFlow();
     setText(els.recentStat, fallback ? `${fmt(fallback.flowCfs, 1)} cfs cached` : "--");
   }
+
+  const fallbackDaily = latestDailyFlow();
+  const flowNow = latestFlow ?? (fallbackDaily ? { value: fallbackDaily.flowCfs, date: fallbackDaily.date } : null);
+  const flowCtx = flowNow ? flowVsTypical(flowNow.value, flowNow.date) : null;
+  setText(
+    els.recentNote,
+    flowCtx
+      ? `The blue line is the river leaving the lake; gold bars are daily rain. Flow is ${flowCtx.phrase} for this date — a short rise after a storm is normal runoff.`
+      : "The blue line is the river leaving the lake; gold bars are daily rain. A short rise after a storm is normal runoff.",
+  );
 }
 
 function drawYearChart() {
@@ -514,6 +736,10 @@ function drawYearChart() {
     const diff = ((latest.flowCfs - typical.median) / typical.median) * 100;
     setText(els.yearStat, `${signed(diff, 0)}% vs median for ${formatDateShort(latest.date)}`);
   }
+  setText(
+    els.yearNote,
+    `When the ${currentYear} line sits inside the shaded band, the lake's outlet is flowing about as much as a normal year for that date.`,
+  );
 }
 
 function drawResponseChart() {
@@ -559,13 +785,17 @@ function drawResponseChart() {
   ctx.arc(x(top.precip), y(top.rise), 5, 0, Math.PI * 2);
   ctx.fill();
 
-  drawAxisLabels(ctx, plot, "rain in", "next-day cfs change");
+  drawAxisLabels(ctx, plot, "rain (in)", "next-day flow change (cfs)");
   const r = correlation(points.map((p) => p.precip), points.map((p) => p.rise));
   setText(els.responseStat, `r ${fmt(r, 2)} | biggest +${fmt(top.rise, 1)} cfs`);
   setLegend(els.responseLegend, [
     ["Daily event", "#137d91"],
     ["Largest response", "#d9694f"],
   ]);
+  setText(
+    els.responseNote,
+    `Dots trending up to the right mean storms flush quickly into and through the lake. The biggest single jump was +${fmt(top.rise, 1)} cfs after ${fmt(top.precip, 2)} in of rain.`,
+  );
 }
 
 function drawWaterTempChart() {
@@ -602,6 +832,12 @@ function drawWaterTempChart() {
   setText(
     els.waterTempStat,
     `${fmt(latest.temp, 1)}${DEG}F on ${formatDateShort(latest.date)}`,
+  );
+  const firstYear = yearOf(samples[0].date);
+  const lastYear = yearOf(samples.at(-1).date);
+  setText(
+    els.waterTempNote,
+    `Each dot is one sample, ${firstYear}–${lastYear}. Warm (red) points are summer surface readings near 80${DEG}F; blue points are cold-season samples near freezing.`,
   );
 }
 
@@ -853,6 +1089,16 @@ function readableCharacteristic(value) {
     .replace("Dissolved oxygen saturation", "Oxygen saturation")
     .replace("Specific conductance", "Conductivity")
     .replace("Total Phosphorus, mixed forms", "Total phosphorus");
+}
+
+function escapeHtml(str) {
+  return String(str ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  }[c]));
 }
 
 function formatSample(sample) {

@@ -19,19 +19,43 @@ const RATING_META = {
   poor: { cls: "rate-poor", color: "#cc5337", label: "Poor" },
 };
 
-const state = { data: null, gallery: [] };
+const state = { data: null, gallery: [], explainers: null };
+
+// Order the glossary the way a resident reads the lake, not alphabetically.
+const GLOSSARY_ORDER = [
+  "beachBacteria",
+  "cyanobacteria",
+  "waterClarity",
+  "dissolvedOxygen",
+  "totalPhosphorus",
+  "waterTemperature",
+  "pH",
+  "chlorophyllA",
+  "turbidity",
+  "specificConductance",
+  "nitrate",
+  "riverFlow",
+];
+
+const DIRECTION_LABEL = {
+  higher: "Higher is better",
+  lower: "Lower is better",
+  "in-range": "Best within a range",
+};
 
 document.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", debounce(drawAllCharts, 140));
 
 async function init() {
   try {
-    const [data, gallery] = await Promise.all([
+    const [data, gallery, explainers] = await Promise.all([
       fetchJson("data/reports.json"),
       fetchJson("data/report-gallery.json").catch(() => []),
+      fetchJson("data/explainers.json").catch(() => null),
     ]);
     state.data = data;
     state.gallery = gallery;
+    state.explainers = explainers;
   } catch (error) {
     document.getElementById("reportIntro").textContent =
       "Could not load the report digest data. Run from a local server (see README).";
@@ -40,6 +64,7 @@ async function init() {
   }
   renderStateChips();
   renderScorecard();
+  renderGlossary();
   renderYearCards();
   renderGallery();
   renderMethod();
@@ -121,6 +146,45 @@ function cell(cls, text) {
   el.className = cls;
   el.textContent = text;
   return el;
+}
+
+/* ---------- glossary ---------- */
+
+function renderGlossary() {
+  const host = document.getElementById("glossary");
+  if (!host) return;
+  if (!state.explainers) {
+    host.innerHTML = `<p class="section-sub">Glossary unavailable.</p>`;
+    return;
+  }
+  host.replaceChildren();
+  const keys = GLOSSARY_ORDER.filter((k) => state.explainers[k]);
+  for (const key of keys) {
+    const e = state.explainers[key];
+    const card = document.createElement("details");
+    card.className = "glossary-card";
+
+    const bands = (e.bands || [])
+      .map(
+        (b) =>
+          `<li><span class="band-label">${escapeHtml(b.label)}</span><span class="band-range">${escapeHtml(b.range)}</span>${b.note ? `<span class="band-note">${escapeHtml(b.note)}</span>` : ""}</li>`,
+      )
+      .join("");
+
+    card.innerHTML = `
+      <summary class="glossary-summary">
+        <span class="glossary-term">${escapeHtml(e.term)}</span>
+        <span class="glossary-dir">${DIRECTION_LABEL[e.goodDirection] || ""}</span>
+      </summary>
+      <div class="glossary-body">
+        <p>${escapeHtml(e.plain)}</p>
+        <p class="glossary-why">${escapeHtml(e.why)}</p>
+        <p class="glossary-normal"><b>Normal:</b> ${escapeHtml(e.normal)}</p>
+        ${bands ? `<ul class="band-list">${bands}</ul>` : ""}
+        <p class="glossary-source">Source: ${escapeHtml(e.source)}</p>
+      </div>`;
+    host.append(card);
+  }
 }
 
 /* ---------- year cards ---------- */

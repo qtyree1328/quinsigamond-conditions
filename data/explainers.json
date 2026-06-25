@@ -1,0 +1,163 @@
+{
+  "waterClarity": {
+    "term": "Water clarity (Secchi depth)",
+    "plain": "How deep into the water you can still see, measured by lowering a black-and-white Secchi disk until it disappears.",
+    "why": "Clearer water generally means fewer algae and suspended particles, so it's more pleasant to swim in and a sign the lake is healthier.",
+    "goodDirection": "higher",
+    "normal": "Lake Quinsigamond typically reads about 5-15 ft (1.5-4.5 m) in the open lake during summer; deeper (clearer) is better.",
+    "bands": [
+      {"label": "Excellent", "range": "> 13 ft (> 4 m)", "note": "Clear, oligotrophic-like water (general trophic guidance)"},
+      {"label": "Good", "range": "10-13 ft (3-4 m)"},
+      {"label": "Fair", "range": "4-10 ft (1.2-3 m)", "note": "Worcester 'State of the Lake' rated clarity 'Fair' in 2023 when most readings fell 4-10 ft"},
+      {"label": "Poor", "range": "< 4 ft (< 1.2 m)", "note": "Below MA turbidity-impairment threshold; lake is listed impaired when summer Secchi falls below ~4 ft"}
+    ],
+    "source": "Worcester 'State of the Lake' Excellent/Good/Fair/Poor bands; MA turbidity impairment (MassDEP 303(d), Secchi ~4 ft / 1.2 m); general lake trophic-state guidance (EPA / NALMS-Carlson)"
+  },
+  "waterTemperature": {
+    "term": "Water temperature (surface)",
+    "plain": "How warm the lake's surface water is.",
+    "why": "It sets how comfortable swimming feels and, when it gets too warm, it stresses cold-water fish and helps fuel algae blooms.",
+    "goodDirection": "in-range",
+    "normal": "Comfortable summer swimming is roughly 70-82°F (21-28°C); cold-water fish (e.g., trout) begin to stress above about 68°F (20°C).",
+    "bands": [
+      {"label": "Cold for swimming", "range": "< 64°F (< 18°C)"},
+      {"label": "Comfortable swimming", "range": "70-82°F (21-28°C)"},
+      {"label": "Cold-water-fish stress", "range": "> 68°F (> 20°C)", "note": "Approximate; species-dependent. MA warm-water-fishery criterion generally caps at 83-86°F (28.3-30°C)"},
+      {"label": "Very warm / bloom-favoring", "range": "> 86°F (> 30°C)"}
+    ],
+    "source": "MassDEP Surface Water Quality Standards (314 CMR 4.00) temperature criteria; general aquatic-life and recreation guidance (EPA). Comfort ranges are general guidance, not a regulatory threshold."
+  },
+  "dissolvedOxygen": {
+    "term": "Dissolved oxygen (DO)",
+    "plain": "The amount of oxygen dissolved in the water that fish and other aquatic life need to breathe.",
+    "why": "Low oxygen suffocates fish and signals pollution or decaying algae; healthy oxygen means a living, balanced lake.",
+    "goodDirection": "higher",
+    "normal": "Healthy surface water is about 5-6+ mg/L (often higher when cool or windy); near 0 mg/L is a 'dead zone'.",
+    "bands": [
+      {"label": "Healthy", "range": "> 6 mg/L"},
+      {"label": "Adequate", "range": "5-6 mg/L", "note": "MA warm-water-fishery minimum is 5.0 mg/L; cold-water fisheries 6.0 mg/L"},
+      {"label": "Stressful / hypoxic", "range": "< 4 mg/L", "note": "Fish stress; below ~4 mg/L is widely used as the hypoxia warning threshold"},
+      {"label": "Dead zone", "range": "~0 mg/L", "note": "Anoxic; lethal to most aquatic life"}
+    ],
+    "source": "MassDEP Surface Water Quality Standards (314 CMR 4.00): 5.0 mg/L (warm-water), 6.0 mg/L (cold-water) minimums; EPA aquatic-life guidance. Lake bottom waters often drop low naturally when stratified in summer."
+  },
+  "pH": {
+    "term": "pH",
+    "plain": "How acidic or basic the water is, on a 0-14 scale where 7 is neutral.",
+    "why": "Water that is too acidic or too basic harms fish and aquatic life and can swing during heavy algae blooms.",
+    "goodDirection": "in-range",
+    "normal": "Healthy lake water sits between 6.5 and 8.5 standard units.",
+    "bands": [
+      {"label": "Healthy", "range": "6.5-8.5 SU"},
+      {"label": "Too acidic", "range": "< 6.5 SU"},
+      {"label": "Too basic", "range": "> 8.5 SU", "note": "High daytime pH can occur during heavy algae/cyanobacteria blooms"}
+    ],
+    "source": "MassDEP Surface Water Quality Standards (314 CMR 4.00) / EPA: 6.5-8.5 SU for aquatic life and recreation."
+  },
+  "totalPhosphorus": {
+    "term": "Total phosphorus (TP)",
+    "plain": "The total amount of phosphorus, a plant nutrient, dissolved and attached to particles in the water.",
+    "why": "Phosphorus is the main fuel for algae and cyanobacteria blooms, so low surface levels mean less bloom risk.",
+    "goodDirection": "lower",
+    "normal": "Surface phosphorus below 0.025 mg/L (25 µg/L) is 'Excellent' in Worcester's reports; EPA flags lakes as eutrophic well above this.",
+    "bands": [
+      {"label": "Excellent", "range": "< 0.025 mg/L (< 25 µg/L)", "note": "Worcester surface-TP 'Excellent' threshold; surface TP at Quinsigamond is usually here"},
+      {"label": "Mesotrophic", "range": "0.015-0.025 mg/L (15-25 µg/L)", "note": "General trophic guidance"},
+      {"label": "Eutrophic (bloom-prone)", "range": "> 0.025-0.030 mg/L (> 25-30 µg/L)", "note": "EPA often cites ~0.020 mg/L total P as a guidance level to limit algal nuisance in lakes"},
+      {"label": "Hypereutrophic", "range": "> 0.100 mg/L (> 100 µg/L)", "note": "Deep/bottom waters at Quinsigamond rise far above this late in summer (0.3-0.7 mg/L), but surface is what bathers contact"}
+    ],
+    "source": "Worcester 'State of the Lake' surface-TP 'Excellent' < 0.025 mg/L; EPA Quality Criteria for Water (~0.020 mg/L total P to control eutrophication; ~0.050 mg/L where streams enter lakes) and lake trophic-state context."
+  },
+  "cyanobacteria": {
+    "term": "Cyanobacteria (blue-green algae)",
+    "plain": "Microscopic blue-green algae that can multiply into scummy blooms, measured by the pigment phycocyanin (µg/L) or by counting cells (cells/mL).",
+    "why": "Some cyanobacteria release toxins that can sicken swimmers, pets, and children, so blooms can close a beach.",
+    "goodDirection": "lower",
+    "normal": "Phycocyanin staying below ~50 µg/L and cell counts well under 70,000 cells/mL indicate no bloom advisory.",
+    "bands": [
+      {"label": "No bloom", "range": "< 50 µg/L phycocyanin"},
+      {"label": "Bloom indicator (watch)", "range": "~50 µg/L phycocyanin", "note": "Bloom-indicator threshold used by Worcester / WCMC monitoring"},
+      {"label": "Advisory threshold", "range": "~70,000 cells/mL", "note": "MA DPH posts a recreational advisory at this cell density (≈14 µg/L microcystin); also issued on visible scum/toxin"},
+      {"label": "Avoid contact", "range": "Visible scum or > advisory", "note": "Keep people and pets out of the water"}
+    ],
+    "source": "Worcester County / WCMC phycocyanin bloom indicator (~50 µg/L); MA DPH 'Guidelines for Cyanobacteria at Recreational Freshwater Locations' (advisory at 70,000 cells/mL or visible scum/toxin), based on US EPA / WHO recommendations."
+  },
+  "turbidity": {
+    "term": "Turbidity",
+    "plain": "How cloudy or murky the water is from suspended particles like sediment and algae, measured in NTU.",
+    "why": "Cloudier water looks less inviting, can carry pollutants, and often goes hand-in-hand with poorer clarity and more algae.",
+    "goodDirection": "lower",
+    "normal": "Clear lake water is usually under ~5 NTU; the higher the number, the murkier the water.",
+    "bands": [
+      {"label": "Clear", "range": "< 5 NTU"},
+      {"label": "Slightly cloudy", "range": "5-10 NTU"},
+      {"label": "Cloudy / turbid", "range": "> 10 NTU", "note": "Often spikes after heavy rain and runoff"}
+    ],
+    "source": "General guidance based on EPA recreational-water and drinking-water context; MassDEP assesses turbidity impairment via clarity (Secchi) rather than a single statewide NTU recreation limit, so these NTU bands are general guidance."
+  },
+  "chlorophyllA": {
+    "term": "Chlorophyll-a",
+    "plain": "The green pigment in algae, used as a stand-in for how much algae is growing in the water (µg/L).",
+    "why": "More chlorophyll means more algae, which clouds the water and raises the odds of a nuisance or harmful bloom.",
+    "goodDirection": "lower",
+    "normal": "Low-algae lakes run under ~7 µg/L; Quinsigamond's open water is usually in the low single digits to low teens.",
+    "bands": [
+      {"label": "Oligotrophic (low algae)", "range": "< 3 µg/L"},
+      {"label": "Mesotrophic", "range": "3-7 µg/L"},
+      {"label": "Eutrophic", "range": "7-40 µg/L", "note": "EPA often cites ~10-12 µg/L as a guidance level to limit nuisance algae"},
+      {"label": "Hypereutrophic (bloom)", "range": "> 40 µg/L"}
+    ],
+    "source": "EPA / NALMS-Carlson trophic-state index and EPA nutrient-criteria guidance for lakes and reservoirs (general trophic guidance)."
+  },
+  "specificConductance": {
+    "term": "Specific conductance (conductivity)",
+    "plain": "How well the water conducts electricity, which rises with dissolved salts and minerals (µS/cm at 25°C).",
+    "why": "In this region a high or rising value is a red flag for road-salt pollution from winter de-icing washing into the lake.",
+    "goodDirection": "lower",
+    "normal": "Unimpacted New England lakes often run well under ~250 µS/cm; urban lakes like Quinsigamond read higher due to road salt.",
+    "bands": [
+      {"label": "Low / natural", "range": "< 250 µS/cm"},
+      {"label": "Elevated (urban/road-salt influence)", "range": "250-800 µS/cm"},
+      {"label": "High (chloride concern)", "range": "> 800-1,000 µS/cm", "note": "Roughly corresponds to chloride nearing EPA's 230 mg/L chronic aquatic-life criterion; exact conversion varies"}
+    ],
+    "source": "EPA chloride aquatic-life criteria (230 mg/L chronic, 860 mg/L acute) as the regulatory anchor; conductivity bands are general regional guidance (no single statewide µS/cm limit), since conductivity is an indicator, not itself a standard."
+  },
+  "nitrate": {
+    "term": "Nitrate",
+    "plain": "A dissolved form of nitrogen, another plant nutrient that comes from fertilizer, septic systems, and runoff (mg/L).",
+    "why": "Extra nitrogen feeds algae growth, and very high nitrate is a drinking-water health concern, so lower is better.",
+    "goodDirection": "lower",
+    "normal": "Clean lake surface water is typically well under 1 mg/L nitrate-N; the drinking-water limit is 10 mg/L.",
+    "bands": [
+      {"label": "Low / natural", "range": "< 1 mg/L (as N)"},
+      {"label": "Elevated (nutrient enrichment)", "range": "1-10 mg/L (as N)"},
+      {"label": "Drinking-water limit", "range": "10 mg/L (as N)", "note": "EPA Maximum Contaminant Level for drinking water; lakes rarely approach this"}
+    ],
+    "source": "EPA National Primary Drinking Water Regulation nitrate MCL = 10 mg/L (as N); lower bands are general lake-nutrient guidance (recreational lakes have no single nitrate limit)."
+  },
+  "beachBacteria": {
+    "term": "Beach bacteria (Enterococcus)",
+    "plain": "A fecal-indicator bacteria counted in the water to flag possible sewage or animal-waste contamination (CFU or MPN per 100 mL).",
+    "why": "High counts mean a higher chance of getting sick from swimming, and they are what trigger a beach closure.",
+    "goodDirection": "lower",
+    "normal": "Safe swimming is a single sample at or below 61 CFU/100 mL and a 5-sample geometric mean at or below 33 CFU/100 mL.",
+    "bands": [
+      {"label": "Safe (single sample)", "range": "≤ 61 CFU/100 mL"},
+      {"label": "Safe (geometric mean)", "range": "≤ 33 CFU/100 mL", "note": "Rolling geomean of recent samples"},
+      {"label": "Beach posting / closure", "range": "> 61 CFU/100 mL single sample (or geomean > 33)", "note": "Beach is posted/closed until resampling passes"}
+    ],
+    "source": "Massachusetts DPH bathing-beach standard for freshwater (105 CMR 445.000): Enterococci single-sample 61 CFU/100 mL, geometric mean 33 CFU/100 mL, based on EPA Recreational Water Quality Criteria."
+  },
+  "riverFlow": {
+    "term": "River flow at the lake outlet (USGS 01110000)",
+    "plain": "How much water per second is flowing in the Quinsigamond River as it leaves the lake, measured in cubic feet per second (cfs).",
+    "why": "It rises and falls with rain and runoff, giving a quick read on storm response, but it is the river leaving the lake, not the lake's water level.",
+    "goodDirection": "in-range",
+    "normal": "Varies seasonally; low/baseflow in dry summer weather and sharp spikes after storms. This is a context signal, not a good/bad score.",
+    "bands": [
+      {"label": "Baseflow / dry", "range": "Lower cfs", "note": "Typical dry-weather flow"},
+      {"label": "Storm response", "range": "Sharply higher cfs", "note": "Spikes after rain; often coincides with runoff, higher turbidity and bacteria"}
+    ],
+    "source": "USGS National Water Information System, Quinsigamond River station 01110000 (Quinsigamond River at North Grafton, MA), the outlet downstream of the lake. Note: this is river discharge LEAVING the lake, a storm-response proxy, NOT the lake's water elevation. No regulatory good/bad threshold."
+  }
+}
